@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, Star } from 'lucide-react';
+import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, Star, FileCheck } from 'lucide-react';
 
 const Index = () => {
   const dishes = [
@@ -122,8 +122,61 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Signature Dishes Section */}
+      {/* Certifications Section */}
       <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Professional Certifications</h2>
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              Recognized credentials and certifications that validate my expertise and commitment 
+              to maintaining the highest standards in food safety and culinary excellence.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <Card className="max-w-2xl bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 border-0">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <FileCheck className="w-8 h-8 text-amber-600" />
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Person-in-Charge Advanced Certification</h3>
+                    <p className="text-amber-600 font-semibold">TSI Quality Services</p>
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <img 
+                    src="/lovable-uploads/e1e3c53e-bbb2-440e-95a1-67adc9cfd865.png"
+                    alt="Person-in-Charge Advanced Certification from TSI Quality Services"
+                    className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                  />
+                </div>
+                <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+                  <div>
+                    <span className="font-semibold">Certification:</span> PIC Advanced
+                  </div>
+                  <div>
+                    <span className="font-semibold">Valid Until:</span> October 2029
+                  </div>
+                  <div>
+                    <span className="font-semibold">Accredited By:</span> EIAC & TSI
+                  </div>
+                  <div>
+                    <span className="font-semibold">Scheme Owner:</span> Dubai Municipality
+                  </div>
+                </div>
+                <div className="mt-4 p-4 bg-amber-50 rounded-lg">
+                  <p className="text-sm text-amber-800 italic">
+                    "Taking Food Safety Qualifications To The Next Level" - Specialized training in 
+                    advanced food safety management and kitchen leadership.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Signature Dishes Section */}
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Signature Dishes</h2>
@@ -158,7 +211,7 @@ const Index = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Culinary Expertise</h2>
@@ -182,7 +235,7 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Professional Experience</h2>
