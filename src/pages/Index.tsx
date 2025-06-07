@@ -27,7 +27,8 @@ const Index = () => {
   const skills = [
     "Arabic Cuisine", "International Cuisine", "Lebanese Cuisine", "Syrian Cuisine", 
     "Menu Development", "Kitchen Management", "Staff Training", "Food Safety", 
-    "Buffet Operations", "Cold Kitchen", "Hot Kitchen", "Food Presentation"
+    "Buffet Operations", "Cold Kitchen", "Hot Kitchen", "Food Presentation",
+    "Recipe Development", "Hygiene Standards", "Team Leadership"
   ];
 
   const experience = [
@@ -36,35 +37,35 @@ const Index = () => {
       restaurant: "Address Creek Harbour Hotel - Emaar",
       location: "Dubai",
       period: "June 2024 - Present",
-      description: "Managing 7 employees in Arabic kitchen and 3 employees breakfast team. Responsible for cleanliness standards, shift scheduling, task distribution, and coordinating with chef de cuisine. Assist in developing menu for Alacarte and buffet operations."
+      description: "Managing 7 employees in Arabic kitchen and 3 employees breakfast team. Following up on cleanliness, setting shift schedules and distributing tasks in coordination with chef de cuisine. Responsible for kitchen and refrigerator management, production and expiration date monitoring. Assisting chef de cuisine in developing menu for Alacarte and buffet operations."
     },
     {
       position: "Junior Sous Chef",
       restaurant: "Bab al Shams Hotel",
       location: "Dubai",
       period: "September 2022 - June 2024",
-      description: "Supervised 5 employees in cold Arabic kitchen, training them on dish preparation. Maintained all recipes and presentation methods for Ala Cart and buffet. Enforced strict health and hygiene standards while assisting in menu updates."
+      description: "Responsible for 5 employees in cold Arabic kitchen, training them on dish preparation. Following up on all recipes and presentation methods for Ala Cart and buffet. Enforcing strict health and hygiene standards and helping kitchen chefs to update the menu."
     },
     {
       position: "Junior Sous Chef",
       restaurant: "Yasmine Palace Restaurant",
       location: "Doha, Qatar",
       period: "February 2021 - July 2022",
-      description: "Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders. Supervised cleanliness, hygiene, flavors, and dish decoration standards."
+      description: "Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders. Following up on cleanliness, hygiene, flavors, and dish decoration standards."
     },
     {
       position: "Senior Chef de Partie",
       restaurant: "Sheraton Hotel",
       location: "Doha, Qatar",
       period: "March 2019 - December 2020",
-      description: "Worked under supervision of head chef, organizing menus and supervising buffet operations. Managed work schedules for employees and maintained hygiene standards."
+      description: "Working under supervision of head chef, organizing menus and supervising buffet operations. Organizing work schedules for employees and maintaining hygiene standards."
     },
     {
       position: "Chef de Partie",
       restaurant: "Le Royal Hotel",
       location: "Beirut, Lebanon",
       period: "February 2017 - February 2019",
-      description: "Oversaw food preparation ensuring high standards of quality and consistency. Specialized in working under pressure in Arabic and International cuisine."
+      description: "Overseeing food preparation and ensuring high standards of quality and consistency. Working under pressure in Arabic and International cuisine."
     },
     {
       position: "Chef de Partie",
@@ -78,14 +79,28 @@ const Index = () => {
       restaurant: "Qube Restaurant",
       location: "Beirut, Lebanon",
       period: "April 2012 - 2014",
-      description: "Specialized in oriental kitchen as chef for daily dishes, covering all kinds of Lebanese and Syrian cuisine."
+      description: "Worked in oriental kitchen as chef for daily dishes, specializing in all kinds of Lebanese and Syrian cuisine."
     },
     {
       position: "Demi Chef de Partie",
       restaurant: "Intercontinental Group Hotel, Riyadh Conference Palace",
       location: "Riyadh, Saudi Arabia",
       period: "February 2010 - February 2012",
-      description: "Worked in Arabic cold kitchen preparing Arabic and local food for one year, then international hot kitchen preparing sauces and main dishes for one year."
+      description: "Worked in Arabic cold kitchen for one year preparing Arabic and local food, then international hot kitchen preparing sauces and main dishes for one year."
+    },
+    {
+      position: "Commis 1",
+      restaurant: "Ramsis Hotel",
+      location: "Aleppo, Syria",
+      period: "May 2008 - January 2010",
+      description: "Helper in Arabic and international cold kitchen, gaining foundational experience in professional kitchen operations."
+    },
+    {
+      position: "Commis 2",
+      restaurant: "Meridian Hotel",
+      location: "Aleppo, Syria",
+      period: "June 2006 - April 2008",
+      description: "Arabic hot kitchen operations, washing and sterilizing vegetables and fruits, and organizing refrigerator storage."
     }
   ];
 
@@ -102,7 +117,7 @@ const Index = () => {
             Professional <span className="text-amber-600">Oriental</span> Chef
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200">
-            Specializing in authentic Arabic and international cuisine with over 16 years of culinary excellence across the Middle East
+            Specializing in authentic Arabic and international cuisine with over 18 years of culinary excellence across the Middle East
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-400">
             <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg">
@@ -122,26 +137,27 @@ const Index = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">About Me</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                With over 16 years of culinary experience across prestigious hotels and restaurants in the Middle East, 
-                I specialize in authentic Arabic cuisine while maintaining expertise in international cooking. 
-                My journey has taken me from Syria to Lebanon, Qatar, and now Dubai, where I continue to create 
-                exceptional dining experiences.
+                With over 18 years of progressive culinary experience across prestigious hotels and restaurants 
+                throughout the Middle East, I have built my expertise from the ground up. Starting as a Commis 
+                in Syria and advancing to my current role as Oriental Chef at Address Creek Harbour Hotel in Dubai, 
+                my journey reflects dedication to mastering both traditional Arabic cuisine and international cooking.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                I believe in preserving traditional flavors while embracing modern presentation techniques. 
-                My passion lies in training teams, maintaining the highest food safety standards, and delivering 
-                consistent quality that honors both heritage and innovation.
+                My expertise spans from Lebanese and Syrian specialties to comprehensive international cuisine. 
+                I believe in preserving authentic flavors while embracing modern presentation techniques, 
+                training teams to maintain the highest standards, and delivering consistent quality that honors 
+                culinary heritage and innovation.
               </p>
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
                   <Award className="w-8 h-8 mx-auto mb-2 text-amber-600" />
-                  <div className="text-2xl font-bold text-gray-900">16+</div>
+                  <div className="text-2xl font-bold text-gray-900">18+</div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </div>
                 <div>
                   <Users className="w-8 h-8 mx-auto mb-2 text-amber-600" />
-                  <div className="text-2xl font-bold text-gray-900">50+</div>
-                  <div className="text-sm text-gray-600">Team Members Trained</div>
+                  <div className="text-2xl font-bold text-gray-900">10+</div>
+                  <div className="text-sm text-gray-600">Team Members Managed</div>
                 </div>
                 <div>
                   <Clock className="w-8 h-8 mx-auto mb-2 text-amber-600" />
@@ -337,7 +353,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Professional Experience</h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               My culinary journey through prestigious establishments across the Middle East, 
-              building expertise in Arabic and international cuisine.
+              building expertise in Arabic and international cuisine from Commis to Oriental Chef.
             </p>
           </div>
           <div className="space-y-8">
