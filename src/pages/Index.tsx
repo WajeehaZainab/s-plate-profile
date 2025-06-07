@@ -3,50 +3,89 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, Star, FileCheck } from 'lucide-react';
+import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, Star, FileCheck, GraduationCap } from 'lucide-react';
 
 const Index = () => {
   const dishes = [
     {
-      name: "Truffle Risotto",
-      description: "Creamy arborio rice with black truffle, parmesan, and fresh herbs",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop&crop=center"
+      name: "Traditional Levantine Meze",
+      description: "Authentic Arabic appetizers featuring hummus, tabbouleh, and fattoush",
+      image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop&crop=center"
     },
     {
-      name: "Seared Duck Breast",
-      description: "Pan-seared duck with cherry reduction and roasted vegetables",
-      image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=400&h=300&fit=crop&crop=center"
+      name: "Mansaf with Lamb",
+      description: "Traditional Jordanian dish with tender lamb in creamy yogurt sauce",
+      image: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop&crop=center"
     },
     {
-      name: "Chocolate Soufflé",
-      description: "Light and airy chocolate soufflé with vanilla bean ice cream",
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop&crop=center"
+      name: "Baklava Selection",
+      description: "Delicate layers of phyllo pastry with nuts and honey syrup",
+      image: "https://images.unsplash.com/photo-1571167781623-c2fe9437b78e?w=400&h=300&fit=crop&crop=center"
     }
   ];
 
   const skills = [
-    "French Cuisine", "Italian Cuisine", "Pastry Arts", "Menu Development",
-    "Kitchen Management", "Food Presentation", "Wine Pairing", "Molecular Gastronomy"
+    "Arabic Cuisine", "International Cuisine", "Lebanese Cuisine", "Syrian Cuisine", 
+    "Menu Development", "Kitchen Management", "Staff Training", "Food Safety", 
+    "Buffet Operations", "Cold Kitchen", "Hot Kitchen", "Food Presentation"
   ];
 
   const experience = [
     {
-      position: "Executive Chef",
-      restaurant: "Le Bernardin",
-      period: "2020 - Present",
-      description: "Leading a team of 15 chefs, developing seasonal menus, and maintaining Michelin standards"
+      position: "Oriental Chef",
+      restaurant: "Address Creek Harbour Hotel - Emaar",
+      location: "Dubai",
+      period: "June 2024 - Present",
+      description: "Managing 7 employees in Arabic kitchen and 3 employees breakfast team. Responsible for cleanliness standards, shift scheduling, task distribution, and coordinating with chef de cuisine. Assist in developing menu for Alacarte and buffet operations."
     },
     {
-      position: "Sous Chef",
-      restaurant: "The French Laundry",
-      period: "2018 - 2020",
-      description: "Assisted in kitchen operations, menu planning, and staff training for fine dining service"
+      position: "Junior Sous Chef",
+      restaurant: "Bab al Shams Hotel",
+      location: "Dubai",
+      period: "September 2022 - June 2024",
+      description: "Supervised 5 employees in cold Arabic kitchen, training them on dish preparation. Maintained all recipes and presentation methods for Ala Cart and buffet. Enforced strict health and hygiene standards while assisting in menu updates."
+    },
+    {
+      position: "Junior Sous Chef",
+      restaurant: "Yasmine Palace Restaurant",
+      location: "Doha, Qatar",
+      period: "February 2021 - July 2022",
+      description: "Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders. Supervised cleanliness, hygiene, flavors, and dish decoration standards."
+    },
+    {
+      position: "Senior Chef de Partie",
+      restaurant: "Sheraton Hotel",
+      location: "Doha, Qatar",
+      period: "March 2019 - December 2020",
+      description: "Worked under supervision of head chef, organizing menus and supervising buffet operations. Managed work schedules for employees and maintained hygiene standards."
     },
     {
       position: "Chef de Partie",
-      restaurant: "Daniel",
-      period: "2016 - 2018",
-      description: "Specialized in sauce station, maintaining quality standards and efficiency during service"
+      restaurant: "Le Royal Hotel",
+      location: "Beirut, Lebanon",
+      period: "February 2017 - February 2019",
+      description: "Oversaw food preparation ensuring high standards of quality and consistency. Specialized in working under pressure in Arabic and International cuisine."
+    },
+    {
+      position: "Chef de Partie",
+      restaurant: "Movenpick Hotel",
+      location: "Beirut, Lebanon",
+      period: "March 2014 - January 2017",
+      description: "Worked in Arabic kitchen for one year and international hot kitchen for two years, gaining comprehensive experience in both cuisines."
+    },
+    {
+      position: "Demi Chef de Partie",
+      restaurant: "Qube Restaurant",
+      location: "Beirut, Lebanon",
+      period: "April 2012 - 2014",
+      description: "Specialized in oriental kitchen as chef for daily dishes, covering all kinds of Lebanese and Syrian cuisine."
+    },
+    {
+      position: "Demi Chef de Partie",
+      restaurant: "Intercontinental Group Hotel, Riyadh Conference Palace",
+      location: "Riyadh, Saudi Arabia",
+      period: "February 2010 - February 2012",
+      description: "Worked in Arabic cold kitchen preparing Arabic and local food for one year, then international hot kitchen preparing sauces and main dishes for one year."
     }
   ];
 
@@ -60,10 +99,10 @@ const Index = () => {
             <ChefHat className="w-20 h-20 mx-auto mb-6 text-amber-600" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 animate-slide-up">
-            Chef <span className="text-amber-600">Alexandre</span> Dubois
+            Professional <span className="text-amber-600">Oriental</span> Chef
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200">
-            Crafting culinary masterpieces with passion, precision, and creativity for over 15 years
+            Specializing in authentic Arabic and international cuisine with over 16 years of culinary excellence across the Middle East
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-400">
             <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg">
@@ -83,19 +122,21 @@ const Index = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">About Me</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                With over 15 years of culinary experience in Michelin-starred restaurants, I bring a unique blend of 
-                classical French techniques and modern innovation to every dish I create. My journey began in Lyon, 
-                France, where I trained under renowned chefs and developed my passion for exceptional cuisine.
+                With over 16 years of culinary experience across prestigious hotels and restaurants in the Middle East, 
+                I specialize in authentic Arabic cuisine while maintaining expertise in international cooking. 
+                My journey has taken me from Syria to Lebanon, Qatar, and now Dubai, where I continue to create 
+                exceptional dining experiences.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                I believe that great food tells a story, evokes emotions, and brings people together. Every plate 
-                I prepare is a canvas where technique meets artistry, and tradition embraces innovation.
+                I believe in preserving traditional flavors while embracing modern presentation techniques. 
+                My passion lies in training teams, maintaining the highest food safety standards, and delivering 
+                consistent quality that honors both heritage and innovation.
               </p>
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
                   <Award className="w-8 h-8 mx-auto mb-2 text-amber-600" />
-                  <div className="text-2xl font-bold text-gray-900">5</div>
-                  <div className="text-sm text-gray-600">Awards Won</div>
+                  <div className="text-2xl font-bold text-gray-900">16+</div>
+                  <div className="text-sm text-gray-600">Years Experience</div>
                 </div>
                 <div>
                   <Users className="w-8 h-8 mx-auto mb-2 text-amber-600" />
@@ -104,8 +145,8 @@ const Index = () => {
                 </div>
                 <div>
                   <Clock className="w-8 h-8 mx-auto mb-2 text-amber-600" />
-                  <div className="text-2xl font-bold text-gray-900">15+</div>
-                  <div className="text-sm text-gray-600">Years Experience</div>
+                  <div className="text-2xl font-bold text-gray-900">5</div>
+                  <div className="text-sm text-gray-600">Countries Worked</div>
                 </div>
               </div>
             </div>
@@ -113,7 +154,7 @@ const Index = () => {
               <div className="aspect-[4/5] bg-gradient-to-br from-amber-100 to-orange-200 rounded-2xl overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=750&fit=crop&crop=center"
-                  alt="Chef Alexandre in the kitchen"
+                  alt="Professional chef in the kitchen"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -122,51 +163,106 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Certifications Section */}
+      {/* Education Section */}
       <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Education & Languages</h2>
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              Professional training and linguistic abilities that support my international culinary career.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow border-0">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <GraduationCap className="w-8 h-8 text-amber-600" />
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Education</h3>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Diploma in Tourism and Hospitality</h4>
+                    <p className="text-amber-600">Tourism and Hotels Institute</p>
+                    <p className="text-gray-600">Aleppo, Syria • 2004 - 2006</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow border-0">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <ChefHat className="w-8 h-8 text-amber-600" />
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Languages</h3>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="font-medium text-gray-900">Arabic</span>
+                    <Badge className="bg-amber-100 text-amber-800">Native</Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="font-medium text-gray-900">English</span>
+                    <Badge className="bg-amber-100 text-amber-800">Professional</Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Professional Certifications</h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Recognized credentials and certifications that validate my expertise and commitment 
-              to maintaining the highest standards in food safety and culinary excellence.
+              Recognized credentials that validate my expertise and commitment to maintaining 
+              the highest standards in food safety and culinary excellence.
             </p>
           </div>
-          <div className="flex justify-center">
-            <Card className="max-w-2xl bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 border-0">
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 border-0">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <FileCheck className="w-8 h-8 text-amber-600" />
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900">Person-in-Charge Advanced Certification</h3>
+                    <h3 className="text-xl font-bold text-gray-900">Person-in-Charge Advanced</h3>
                     <p className="text-amber-600 font-semibold">TSI Quality Services</p>
                   </div>
                 </div>
                 <div className="mb-6">
                   <img 
                     src="/lovable-uploads/e1e3c53e-bbb2-440e-95a1-67adc9cfd865.png"
-                    alt="Person-in-Charge Advanced Certification from TSI Quality Services"
+                    alt="Person-in-Charge Advanced Certification"
                     className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow"
                   />
                 </div>
-                <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+                <div className="text-sm text-gray-600">
+                  <p className="mb-2"><span className="font-semibold">Valid Until:</span> October 2029</p>
+                  <p><span className="font-semibold">Accredited By:</span> EIAC & TSI</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow border-0">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <FileCheck className="w-8 h-8 text-amber-600" />
                   <div>
-                    <span className="font-semibold">Certification:</span> PIC Advanced
-                  </div>
-                  <div>
-                    <span className="font-semibold">Valid Until:</span> October 2029
-                  </div>
-                  <div>
-                    <span className="font-semibold">Accredited By:</span> EIAC & TSI
-                  </div>
-                  <div>
-                    <span className="font-semibold">Scheme Owner:</span> Dubai Municipality
+                    <h3 className="text-xl font-bold text-gray-900">Basic Food Safety</h3>
+                    <p className="text-amber-600 font-semibold">Certified Professional</p>
                   </div>
                 </div>
-                <div className="mt-4 p-4 bg-amber-50 rounded-lg">
-                  <p className="text-sm text-amber-800 italic">
-                    "Taking Food Safety Qualifications To The Next Level" - Specialized training in 
-                    advanced food safety management and kitchen leadership.
+                <div className="p-4 bg-amber-50 rounded-lg">
+                  <p className="text-sm text-amber-800">
+                    Fundamental food safety training covering hygiene standards, 
+                    proper food handling, and safety protocols essential for 
+                    professional kitchen operations.
                   </p>
                 </div>
               </CardContent>
@@ -176,13 +272,13 @@ const Index = () => {
       </section>
 
       {/* Signature Dishes Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">Signature Dishes</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Signature Specialties</h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Each dish represents my commitment to excellence, showcasing the finest ingredients 
-              and innovative techniques that define my culinary philosophy.
+              Authentic Arabic dishes that showcase traditional flavors and modern presentation, 
+              reflecting my expertise in Middle Eastern cuisine.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -211,13 +307,13 @@ const Index = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Culinary Expertise</h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              A comprehensive skill set developed through years of dedication and continuous learning 
-              in the world's finest kitchens.
+              Comprehensive skills developed through years of dedication in prestigious 
+              kitchens across the Middle East.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 justify-center">
@@ -235,13 +331,13 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Professional Experience</h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              My culinary journey through prestigious establishments has shaped my expertise 
-              and refined my approach to exceptional cuisine.
+              My culinary journey through prestigious establishments across the Middle East, 
+              building expertise in Arabic and international cuisine.
             </p>
           </div>
           <div className="space-y-8">
@@ -250,6 +346,7 @@ const Index = () => {
                 <div className="grid md:grid-cols-4 gap-6 items-start">
                   <div className="md:col-span-1">
                     <Badge className="bg-amber-100 text-amber-800 mb-2">{job.period}</Badge>
+                    <p className="text-sm text-gray-600 font-medium">{job.location}</p>
                   </div>
                   <div className="md:col-span-3">
                     <h3 className="text-2xl font-bold text-gray-900 mb-1">{job.position}</h3>
@@ -266,26 +363,26 @@ const Index = () => {
       {/* Contact Section */}
       <section className="py-20 px-4 bg-gradient-to-br from-amber-600 to-orange-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Let's Create Something Extraordinary</h2>
+          <h2 className="text-4xl font-bold mb-6">Let's Create Culinary Excellence Together</h2>
           <p className="text-xl mb-12 opacity-90">
-            Ready to elevate your dining experience? I'm available for private events, 
-            consulting, and culinary collaborations.
+            Ready to bring authentic Arabic flavors to your establishment? 
+            I'm available for executive chef positions, consulting, and menu development.
           </p>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center">
               <Mail className="w-8 h-8 mb-3" />
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="opacity-90">chef@alexandredubois.com</p>
+              <p className="opacity-90">chef@example.com</p>
             </div>
             <div className="flex flex-col items-center">
               <Phone className="w-8 h-8 mb-3" />
               <h3 className="font-semibold mb-2">Phone</h3>
-              <p className="opacity-90">+1 (555) 123-4567</p>
+              <p className="opacity-90">Available upon request</p>
             </div>
             <div className="flex flex-col items-center">
               <MapPin className="w-8 h-8 mb-3" />
               <h3 className="font-semibold mb-2">Location</h3>
-              <p className="opacity-90">New York City, NY</p>
+              <p className="opacity-90">Dubai, UAE</p>
             </div>
           </div>
           <Button size="lg" variant="outline" className="bg-white text-amber-600 hover:bg-gray-100 border-white px-8 py-3 text-lg">
@@ -296,7 +393,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="py-8 px-4 bg-gray-900 text-center text-gray-400">
-        <p>&copy; 2024 Chef Alexandre Dubois. All rights reserved.</p>
+        <p>&copy; 2024 Professional Oriental Chef Portfolio. All rights reserved.</p>
       </footer>
     </div>
   );
