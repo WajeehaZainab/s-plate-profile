@@ -5,17 +5,17 @@ import { Badge } from '@/components/ui/badge';
 import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, Star, FileCheck, GraduationCap } from 'lucide-react';
 const Index = () => {
   const dishes = [{
-    name: "Traditional Levantine Meze",
-    description: "Authentic Arabic appetizers featuring hummus, tabbouleh, and fattoush",
-    image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop&crop=center"
+    name: "Arabic Fattoush Salad",
+    description: "Fresh mixed greens with pomegranate, avocado, and crispy bread, dressed with traditional sumac vinaigrette",
+    image: "/lovable-uploads/40e42800-b4b7-4a50-bc02-f90391992e2d.png"
   }, {
-    name: "Mansaf with Lamb",
-    description: "Traditional Jordanian dish with tender lamb in creamy yogurt sauce",
-    image: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop&crop=center"
+    name: "Traditional Fatteh",
+    description: "Authentic Arabic dish with toasted bread, chickpeas, and creamy tahini sauce, garnished with fresh herbs",
+    image: "/lovable-uploads/5427e9d1-0f52-42f3-a48c-8c257c6942e2.png"
   }, {
-    name: "Baklava Selection",
-    description: "Delicate layers of phyllo pastry with nuts and honey syrup",
-    image: "https://images.unsplash.com/photo-1571167781623-c2fe9437b78e?w=400&h=300&fit=crop&crop=center"
+    name: "Stuffed Chicken Breast",
+    description: "Expertly prepared chicken breast stuffed with herbs and spices, served with roasted vegetables and signature sauce",
+    image: "/lovable-uploads/bd6cfe34-c7c6-4f52-ad2a-eef64f409195.png"
   }];
   const skills = ["Arabic Cuisine", "International Cuisine", "Lebanese Cuisine", "Syrian Cuisine", "Menu Development", "Kitchen Management", "Staff Training", "Food Safety", "Buffet Operations", "Cold Kitchen", "Hot Kitchen", "Food Presentation", "Recipe Development", "Hygiene Standards", "Team Leadership"];
   const experience = [{
@@ -35,7 +35,7 @@ const Index = () => {
     restaurant: "Yasmine Palace Restaurant",
     location: "Doha, Qatar",
     period: "February 2021 - July 2022",
-    description: "Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders. Following up on cleanliness, hygiene, flavors, and dish decoration standards."
+    description: "Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders. Following up on cleanliness, hygiene, and everything related to flavors and dish decoration standards."
   }, {
     position: "Senior Chef de Partie",
     restaurant: "Sheraton Hotel",
@@ -94,7 +94,7 @@ const Index = () => {
             Professional <span className="text-amber-600">Oriental</span> Chef
           </h2>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200">
-            An experienced and passionate chef with expertise in multiple restaurant and hotel settings, 
+            An experienced and passionate cook with expertise in multiple restaurant and hotel settings, 
             striving to serve the best possible food with innovative menu creation and exceptional leadership skills
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-400">
@@ -233,21 +233,21 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow border-0">
+            <Card className="bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 border-0">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <FileCheck className="w-8 h-8 text-amber-600" />
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">Basic Food Safety</h3>
-                    <p className="text-amber-600 font-semibold">Certified Professional</p>
+                    <p className="text-amber-600 font-semibold">Emaar Hospitality</p>
                   </div>
                 </div>
-                <div className="p-4 bg-amber-50 rounded-lg">
-                  <p className="text-sm text-amber-800">
-                    Fundamental food safety training covering hygiene standards, 
-                    proper food handling, and safety protocols essential for 
-                    professional kitchen operations.
-                  </p>
+                <div className="mb-6">
+                  <img src="/lovable-uploads/4164f055-060a-4dda-8a26-c6f302d65971.png" alt="Basic Food Safety Certification" className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow" />
+                </div>
+                <div className="text-sm text-gray-600">
+                  <p className="mb-2"><span className="font-semibold">Completed:</span> June 27, 2024</p>
+                  <p><span className="font-semibold">Issued By:</span> Emaar Hospitality</p>
                 </div>
               </CardContent>
             </Card>
