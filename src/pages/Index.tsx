@@ -2,7 +2,9 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, Star, FileCheck, GraduationCap } from 'lucide-react';
+import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, Star, FileCheck, GraduationCap, Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 const Index = () => {
   const dishes = [{
     name: "Arabic Fattoush Salad",
@@ -79,9 +81,121 @@ const Index = () => {
     period: "June 2006 - April 2008",
     description: "Arabic hot kitchen operations, washing and sterilizing vegetables and fruits, and organizing refrigerator storage."
   }];
+
+  const handleDownloadCV = () => {
+    // Create a simple CV content
+    const cvContent = `
+HASAN ALKHODER
+Professional Oriental Chef
+
+Contact Information:
+Email: hasankhuder67@gmail.com
+Phone: 0566284150
+Location: Dubai, UAE
+
+OBJECTIVE:
+An experienced and passionate cook with experience in multiple restaurant and hotels setting striving to serve the best possible food. Recognized as a visionary chef with knowledge of food trends and ability to think outside the box when it comes to menu creation, demonstrating an in-depth knowledge of flavor and food relationship resulting in mouth-watering dishes and attractive menus. A passionate first choice professional who is adept at using excellent leadership skills and innovation to guide kitchen planning and operations.
+
+PROFESSIONAL EXPERIENCE:
+
+Oriental Chef | Address Creek Harbour Hotel - Emaar | Dubai | June 2024 - Present
+• Managing 7 employees in Arabic kitchen and 3 employees breakfast team
+• Following up on cleanliness, setting shift schedules and distributing tasks in coordination with chef de cuisine
+• Responsible for kitchen and refrigerator management, production and expiration date monitoring
+• Assisting chef de cuisine in developing menu for Alacarte and buffet operations
+
+Junior Sous Chef | Bab al Shams Hotel | Dubai | September 2022 - June 2024
+• Responsible for 5 employees in cold Arabic kitchen, training them on dish preparation
+• Following up on all recipes and presentation methods for Ala Cart and buffet
+• Enforcing strict health and hygiene standards and helping kitchen chefs to update the menu
+
+Junior Sous Chef | Yasmine Palace Restaurant | Doha, Qatar | February 2021 - July 2022
+• Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders
+• Following up on cleanliness, hygiene, and everything related to flavors and dish decoration standards
+
+Senior Chef de Partie | Sheraton Hotel | Doha, Qatar | March 2019 - December 2020
+• Working under supervision of head chef, organizing menus and supervising buffet operations
+• Organizing work schedules for employees and maintaining hygiene standards
+
+Chef de Partie | Le Royal Hotel | Beirut, Lebanon | February 2017 - February 2019
+• Overseeing food preparation and ensuring high standards of quality and consistency
+• Working under pressure in Arabic and International cuisine
+
+Chef de Partie | Movenpick Hotel | Beirut, Lebanon | March 2014 - January 2017
+• Worked in Arabic kitchen for one year and international hot kitchen for two years
+• Gaining comprehensive experience in both cuisines
+
+Demi Chef de Partie | Qube Restaurant | Beirut, Lebanon | April 2012 - 2014
+• Worked in oriental kitchen as chef for daily dishes
+• Specializing in all kinds of Lebanese and Syrian cuisine
+
+Demi Chef de Partie | Intercontinental Group Hotel | Riyadh, Saudi Arabia | February 2010 - February 2012
+• Worked in Arabic cold kitchen for one year preparing Arabic and local food
+• International hot kitchen preparing sauces and main dishes for one year
+
+Commis 1 | Ramsis Hotel | Aleppo, Syria | May 2008 - January 2010
+• Helper in Arabic and international cold kitchen
+• Gaining foundational experience in professional kitchen operations
+
+Commis 2 | Meridian Hotel | Aleppo, Syria | June 2006 - April 2008
+• Arabic hot kitchen operations, washing and sterilizing vegetables and fruits
+• Organizing refrigerator storage
+
+EDUCATION:
+Diploma in Tourism and Hospitality | Tourism and Hotels Institute | Aleppo, Syria | 2004 - 2006
+
+LANGUAGES:
+• Arabic (Native)
+• English (Professional)
+
+SKILLS:
+Arabic Cuisine, International Cuisine, Lebanese Cuisine, Syrian Cuisine, Menu Development, Kitchen Management, Staff Training, Food Safety, Buffet Operations, Cold Kitchen, Hot Kitchen, Food Presentation, Recipe Development, Hygiene Standards, Team Leadership
+
+CERTIFICATIONS:
+• Person-in-Charge Advanced | TSI Quality Services | Valid Until October 2029
+• Basic Food Safety | Emaar Hospitality | Completed June 27, 2024
+    `;
+
+    const blob = new Blob([cvContent], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Hasan_Alkhoder_CV.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
   return <div className="min-h-screen bg-background">
+      {/* Navigation Bar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 py-3">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-2">
+              <ChefHat className="w-8 h-8 text-amber-600" />
+              <span className="text-xl font-bold text-gray-900">Hasan Alkhoder</span>
+            </div>
+            <div className="flex gap-3">
+              <Link to="/gallery">
+                <Button variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50">
+                  View Gallery
+                </Button>
+              </Link>
+              <Button 
+                onClick={handleDownloadCV}
+                className="bg-amber-600 hover:bg-amber-700 text-white"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Download CV
+              </Button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 to-orange-100 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 to-orange-100 overflow-hidden pt-16">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <div className="mb-8 animate-fade-in">
@@ -98,9 +212,11 @@ const Index = () => {
             striving to serve the best possible food with innovative menu creation and exceptional leadership skills
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-400">
-            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg">
-              View My Work
-            </Button>
+            <Link to="/gallery">
+              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg">
+                View My Work
+              </Button>
+            </Link>
             <Button variant="outline" size="lg" className="border-amber-600 text-amber-600 hover:bg-amber-50 px-8 py-3 text-lg">
               Contact Me
             </Button>

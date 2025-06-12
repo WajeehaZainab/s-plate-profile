@@ -1,0 +1,114 @@
+
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const Gallery = () => {
+  const dishes = [
+    {
+      name: "Grilled Chicken with Vegetables",
+      image: "/lovable-uploads/3246030e-8c4b-429d-b5be-7648af76e938.png",
+      description: "Perfectly grilled chicken breast with sautéed mushrooms and green beans, finished with fresh microgreens"
+    },
+    {
+      name: "Stuffed Chicken with Rice",
+      image: "/lovable-uploads/a8adaf4f-45ba-48f6-9520-d44e3570001c.png",
+      description: "Traditional stuffed chicken breast filled with seasoned rice and herbs, served with rich gravy"
+    },
+    {
+      name: "Artistic Dessert Presentation",
+      image: "/lovable-uploads/a514be23-29e2-4657-82b0-a2110a467a9c.png",
+      description: "Elegant dessert with artistic plating, featuring delicate garnishes and creative presentation"
+    },
+    {
+      name: "Fresh Arabic Salad",
+      image: "/lovable-uploads/313bc143-911e-4d53-91c2-f571d70abd98.png",
+      description: "Vibrant Arabic salad with mixed greens, cherry tomatoes, and traditional crispy bread garnish"
+    },
+    {
+      name: "Traditional Fatteh",
+      image: "/lovable-uploads/04e4e5a6-cfed-4c2a-8df6-b4bd2073492b.png",
+      description: "Authentic Arabic fatteh with crispy vermicelli, creamy yogurt sauce, and toasted pine nuts"
+    },
+    {
+      name: "Gourmet Appetizer Platter",
+      image: "/lovable-uploads/b9835320-12cd-4671-9427-af8c1abe007c.png",
+      description: "Elegant appetizer selection with crispy elements and flavorful dipping sauce"
+    },
+    {
+      name: "Seared Tuna with Vegetables",
+      image: "/lovable-uploads/23086f64-247b-488c-be8e-3bec67636556.png",
+      description: "Perfectly seared tuna with fresh vegetables and artistic plating"
+    },
+    {
+      name: "Herb-Crusted Lamb Rack",
+      image: "/lovable-uploads/122fbf6e-2000-48d8-a440-a72cd534b072.png",
+      description: "Premium lamb rack with herb crust, served with seasonal vegetables and rich jus"
+    },
+    {
+      name: "Avocado Quinoa Tower",
+      image: "/lovable-uploads/90e6f4a1-32c2-4aa6-a3e8-60ea56476762.png",
+      description: "Modern healthy dish featuring avocado and quinoa with artistic presentation"
+    },
+    {
+      name: "Arabic Fattoush Salad",
+      image: "/lovable-uploads/40e42800-b4b7-4a50-bc02-f90391992e2d.png",
+      description: "Fresh mixed greens with pomegranate, avocado, and crispy bread, dressed with traditional sumac vinaigrette"
+    },
+    {
+      name: "Traditional Fatteh",
+      image: "/lovable-uploads/5427e9d1-0f52-42f3-a48c-8c257c6942e2.png",
+      description: "Authentic Arabic dish with toasted bread, chickpeas, and creamy tahini sauce, garnished with fresh herbs"
+    },
+    {
+      name: "Stuffed Chicken Breast",
+      image: "/lovable-uploads/bd6cfe34-c7c6-4f52-ad2a-eef64f409195.png",
+      description: "Expertly prepared chicken breast stuffed with herbs and spices, served with roasted vegetables and signature sauce"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <div className="bg-gradient-to-r from-amber-600 to-orange-700 text-white py-8">
+        <div className="max-w-6xl mx-auto px-4">
+          <Link to="/">
+            <Button variant="ghost" className="text-white hover:bg-white/10 mb-4">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Portfolio
+            </Button>
+          </Link>
+          <h1 className="text-4xl font-bold mb-2">Culinary Gallery</h1>
+          <p className="text-xl opacity-90">A showcase of my signature dishes and culinary creations</p>
+        </div>
+      </div>
+
+      {/* Gallery */}
+      <div className="py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {dishes.map((dish, index) => (
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-white overflow-hidden">
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src={dish.image} 
+                    alt={dish.name} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">{dish.name}</h3>
+                  <p className="text-gray-700 leading-relaxed">{dish.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Gallery;
