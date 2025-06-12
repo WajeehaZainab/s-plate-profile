@@ -212,13 +212,22 @@ CERTIFICATIONS:
             striving to serve the best possible food with innovative menu creation and exceptional leadership skills
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-400">
+            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg">
+              View My Work
+            </Button>
             <Link to="/gallery">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg">
-                View My Work
+              <Button variant="outline" size="lg" className="border-amber-600 text-amber-600 hover:bg-amber-50 px-8 py-3 text-lg">
+                View Gallery
               </Button>
             </Link>
-            <Button variant="outline" size="lg" className="border-amber-600 text-amber-600 hover:bg-amber-50 px-8 py-3 text-lg">
-              Contact Me
+            <Button 
+              variant="outline"
+              size="lg" 
+              className="border-amber-600 text-amber-600 hover:bg-amber-50 px-8 py-3 text-lg"
+              onClick={handleDownloadCV}
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Download CV
             </Button>
           </div>
         </div>
@@ -329,40 +338,40 @@ CERTIFICATIONS:
               the highest standards in food safety and culinary excellence.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 border-0">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <FileCheck className="w-8 h-8 text-amber-600" />
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <FileCheck className="w-6 h-6 text-amber-600" />
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Person-in-Charge Advanced</h3>
-                    <p className="text-amber-600 font-semibold">TSI Quality Services</p>
+                    <h3 className="text-lg font-bold text-gray-900">Person-in-Charge Advanced</h3>
+                    <p className="text-amber-600 font-semibold text-sm">TSI Quality Services</p>
                   </div>
                 </div>
-                <div className="mb-6">
-                  <img src="/lovable-uploads/e1e3c53e-bbb2-440e-95a1-67adc9cfd865.png" alt="Person-in-Charge Advanced Certification" className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow" />
+                <div className="mb-4">
+                  <img src="/lovable-uploads/e1e3c53e-bbb2-440e-95a1-67adc9cfd865.png" alt="Person-in-Charge Advanced Certification" className="w-full h-48 object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow" />
                 </div>
                 <div className="text-sm text-gray-600">
-                  <p className="mb-2"><span className="font-semibold">Valid Until:</span> October 2029</p>
+                  <p className="mb-1"><span className="font-semibold">Valid Until:</span> October 2029</p>
                   <p><span className="font-semibold">Accredited By:</span> EIAC & TSI</p>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 border-0">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <FileCheck className="w-8 h-8 text-amber-600" />
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <FileCheck className="w-6 h-6 text-amber-600" />
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Basic Food Safety</h3>
-                    <p className="text-amber-600 font-semibold">Emaar Hospitality</p>
+                    <h3 className="text-lg font-bold text-gray-900">Basic Food Safety</h3>
+                    <p className="text-amber-600 font-semibold text-sm">Emaar Hospitality</p>
                   </div>
                 </div>
-                <div className="mb-6">
-                  <img src="/lovable-uploads/4164f055-060a-4dda-8a26-c6f302d65971.png" alt="Basic Food Safety Certification" className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow" />
+                <div className="mb-4">
+                  <img src="/lovable-uploads/4164f055-060a-4dda-8a26-c6f302d65971.png" alt="Basic Food Safety Certification" className="w-full h-48 object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow" />
                 </div>
                 <div className="text-sm text-gray-600">
-                  <p className="mb-2"><span className="font-semibold">Completed:</span> June 27, 2024</p>
+                  <p className="mb-1"><span className="font-semibold">Completed:</span> June 27, 2024</p>
                   <p><span className="font-semibold">Issued By:</span> Emaar Hospitality</p>
                 </div>
               </CardContent>
