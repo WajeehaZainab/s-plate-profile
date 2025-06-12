@@ -3,108 +3,83 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, Star, FileCheck, GraduationCap } from 'lucide-react';
-
 const Index = () => {
-  const dishes = [
-    {
-      name: "Traditional Levantine Meze",
-      description: "Authentic Arabic appetizers featuring hummus, tabbouleh, and fattoush",
-      image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop&crop=center"
-    },
-    {
-      name: "Mansaf with Lamb",
-      description: "Traditional Jordanian dish with tender lamb in creamy yogurt sauce",
-      image: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop&crop=center"
-    },
-    {
-      name: "Baklava Selection",
-      description: "Delicate layers of phyllo pastry with nuts and honey syrup",
-      image: "https://images.unsplash.com/photo-1571167781623-c2fe9437b78e?w=400&h=300&fit=crop&crop=center"
-    }
-  ];
-
-  const skills = [
-    "Arabic Cuisine", "International Cuisine", "Lebanese Cuisine", "Syrian Cuisine", 
-    "Menu Development", "Kitchen Management", "Staff Training", "Food Safety", 
-    "Buffet Operations", "Cold Kitchen", "Hot Kitchen", "Food Presentation",
-    "Recipe Development", "Hygiene Standards", "Team Leadership"
-  ];
-
-  const experience = [
-    {
-      position: "Oriental Chef",
-      restaurant: "Address Creek Harbour Hotel - Emaar",
-      location: "Dubai",
-      period: "June 2024 - Present",
-      description: "Managing 7 employees in Arabic kitchen and 3 employees breakfast team. Following up on cleanliness, setting shift schedules and distributing tasks in coordination with chef de cuisine. Responsible for kitchen and refrigerator management, production and expiration date monitoring. Assisting chef de cuisine in developing menu for Alacarte and buffet operations."
-    },
-    {
-      position: "Junior Sous Chef",
-      restaurant: "Bab al Shams Hotel",
-      location: "Dubai",
-      period: "September 2022 - June 2024",
-      description: "Responsible for 5 employees in cold Arabic kitchen, training them on dish preparation. Following up on all recipes and presentation methods for Ala Cart and buffet. Enforcing strict health and hygiene standards and helping kitchen chefs to update the menu."
-    },
-    {
-      position: "Junior Sous Chef",
-      restaurant: "Yasmine Palace Restaurant",
-      location: "Doha, Qatar",
-      period: "February 2021 - July 2022",
-      description: "Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders. Following up on cleanliness, hygiene, flavors, and dish decoration standards."
-    },
-    {
-      position: "Senior Chef de Partie",
-      restaurant: "Sheraton Hotel",
-      location: "Doha, Qatar",
-      period: "March 2019 - December 2020",
-      description: "Working under supervision of head chef, organizing menus and supervising buffet operations. Organizing work schedules for employees and maintaining hygiene standards."
-    },
-    {
-      position: "Chef de Partie",
-      restaurant: "Le Royal Hotel",
-      location: "Beirut, Lebanon",
-      period: "February 2017 - February 2019",
-      description: "Overseeing food preparation and ensuring high standards of quality and consistency. Working under pressure in Arabic and International cuisine."
-    },
-    {
-      position: "Chef de Partie",
-      restaurant: "Movenpick Hotel",
-      location: "Beirut, Lebanon",
-      period: "March 2014 - January 2017",
-      description: "Worked in Arabic kitchen for one year and international hot kitchen for two years, gaining comprehensive experience in both cuisines."
-    },
-    {
-      position: "Demi Chef de Partie",
-      restaurant: "Qube Restaurant",
-      location: "Beirut, Lebanon",
-      period: "April 2012 - 2014",
-      description: "Worked in oriental kitchen as chef for daily dishes, specializing in all kinds of Lebanese and Syrian cuisine."
-    },
-    {
-      position: "Demi Chef de Partie",
-      restaurant: "Intercontinental Group Hotel, Riyadh Conference Palace",
-      location: "Riyadh, Saudi Arabia",
-      period: "February 2010 - February 2012",
-      description: "Worked in Arabic cold kitchen for one year preparing Arabic and local food, then international hot kitchen preparing sauces and main dishes for one year."
-    },
-    {
-      position: "Commis 1",
-      restaurant: "Ramsis Hotel",
-      location: "Aleppo, Syria",
-      period: "May 2008 - January 2010",
-      description: "Helper in Arabic and international cold kitchen, gaining foundational experience in professional kitchen operations."
-    },
-    {
-      position: "Commis 2",
-      restaurant: "Meridian Hotel",
-      location: "Aleppo, Syria",
-      period: "June 2006 - April 2008",
-      description: "Arabic hot kitchen operations, washing and sterilizing vegetables and fruits, and organizing refrigerator storage."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const dishes = [{
+    name: "Traditional Levantine Meze",
+    description: "Authentic Arabic appetizers featuring hummus, tabbouleh, and fattoush",
+    image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop&crop=center"
+  }, {
+    name: "Mansaf with Lamb",
+    description: "Traditional Jordanian dish with tender lamb in creamy yogurt sauce",
+    image: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop&crop=center"
+  }, {
+    name: "Baklava Selection",
+    description: "Delicate layers of phyllo pastry with nuts and honey syrup",
+    image: "https://images.unsplash.com/photo-1571167781623-c2fe9437b78e?w=400&h=300&fit=crop&crop=center"
+  }];
+  const skills = ["Arabic Cuisine", "International Cuisine", "Lebanese Cuisine", "Syrian Cuisine", "Menu Development", "Kitchen Management", "Staff Training", "Food Safety", "Buffet Operations", "Cold Kitchen", "Hot Kitchen", "Food Presentation", "Recipe Development", "Hygiene Standards", "Team Leadership"];
+  const experience = [{
+    position: "Oriental Chef",
+    restaurant: "Address Creek Harbour Hotel - Emaar",
+    location: "Dubai",
+    period: "June 2024 - Present",
+    description: "Managing 7 employees in Arabic kitchen and 3 employees breakfast team. Following up on cleanliness, setting shift schedules and distributing tasks in coordination with chef de cuisine. Responsible for kitchen and refrigerator management, production and expiration date monitoring. Assisting chef de cuisine in developing menu for Alacarte and buffet operations."
+  }, {
+    position: "Junior Sous Chef",
+    restaurant: "Bab al Shams Hotel",
+    location: "Dubai",
+    period: "September 2022 - June 2024",
+    description: "Responsible for 5 employees in cold Arabic kitchen, training them on dish preparation. Following up on all recipes and presentation methods for Ala Cart and buffet. Enforcing strict health and hygiene standards and helping kitchen chefs to update the menu."
+  }, {
+    position: "Junior Sous Chef",
+    restaurant: "Yasmine Palace Restaurant",
+    location: "Doha, Qatar",
+    period: "February 2021 - July 2022",
+    description: "Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders. Following up on cleanliness, hygiene, flavors, and dish decoration standards."
+  }, {
+    position: "Senior Chef de Partie",
+    restaurant: "Sheraton Hotel",
+    location: "Doha, Qatar",
+    period: "March 2019 - December 2020",
+    description: "Working under supervision of head chef, organizing menus and supervising buffet operations. Organizing work schedules for employees and maintaining hygiene standards."
+  }, {
+    position: "Chef de Partie",
+    restaurant: "Le Royal Hotel",
+    location: "Beirut, Lebanon",
+    period: "February 2017 - February 2019",
+    description: "Overseeing food preparation and ensuring high standards of quality and consistency. Working under pressure in Arabic and International cuisine."
+  }, {
+    position: "Chef de Partie",
+    restaurant: "Movenpick Hotel",
+    location: "Beirut, Lebanon",
+    period: "March 2014 - January 2017",
+    description: "Worked in Arabic kitchen for one year and international hot kitchen for two years, gaining comprehensive experience in both cuisines."
+  }, {
+    position: "Demi Chef de Partie",
+    restaurant: "Qube Restaurant",
+    location: "Beirut, Lebanon",
+    period: "April 2012 - 2014",
+    description: "Worked in oriental kitchen as chef for daily dishes, specializing in all kinds of Lebanese and Syrian cuisine."
+  }, {
+    position: "Demi Chef de Partie",
+    restaurant: "Intercontinental Group Hotel, Riyadh Conference Palace",
+    location: "Riyadh, Saudi Arabia",
+    period: "February 2010 - February 2012",
+    description: "Worked in Arabic cold kitchen for one year preparing Arabic and local food, then international hot kitchen preparing sauces and main dishes for one year."
+  }, {
+    position: "Commis 1",
+    restaurant: "Ramsis Hotel",
+    location: "Aleppo, Syria",
+    period: "May 2008 - January 2010",
+    description: "Helper in Arabic and international cold kitchen, gaining foundational experience in professional kitchen operations."
+  }, {
+    position: "Commis 2",
+    restaurant: "Meridian Hotel",
+    location: "Aleppo, Syria",
+    period: "June 2006 - April 2008",
+    description: "Arabic hot kitchen operations, washing and sterilizing vegetables and fruits, and organizing refrigerator storage."
+  }];
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 to-orange-100 overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
@@ -169,11 +144,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <div className="aspect-[4/5] bg-gradient-to-br from-amber-100 to-orange-200 rounded-2xl overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=750&fit=crop&crop=center"
-                  alt="Professional chef in the kitchen"
-                  className="w-full h-full object-cover"
-                />
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=750&fit=crop&crop=center" alt="Professional chef in the kitchen" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -253,11 +224,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="mb-6">
-                  <img 
-                    src="/lovable-uploads/e1e3c53e-bbb2-440e-95a1-67adc9cfd865.png"
-                    alt="Person-in-Charge Advanced Certification"
-                    className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow"
-                  />
+                  <img src="/lovable-uploads/e1e3c53e-bbb2-440e-95a1-67adc9cfd865.png" alt="Person-in-Charge Advanced Certification" className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow" />
                 </div>
                 <div className="text-sm text-gray-600">
                   <p className="mb-2"><span className="font-semibold">Valid Until:</span> October 2029</p>
@@ -299,26 +266,18 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {dishes.map((dish, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-white overflow-hidden">
+            {dishes.map((dish, index) => <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-white overflow-hidden">
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img 
-                    src={dish.image}
-                    alt={dish.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                  <img src={dish.image} alt={dish.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-3 text-gray-900">{dish.name}</h3>
                   <p className="text-gray-700 leading-relaxed">{dish.description}</p>
                   <div className="flex items-center mt-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
-                    ))}
+                    {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />)}
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -334,15 +293,9 @@ const Index = () => {
             </p>
           </div>
           <div className="flex flex-wrap gap-3 justify-center">
-            {skills.map((skill, index) => (
-              <Badge 
-                key={index} 
-                variant="outline" 
-                className="px-4 py-2 text-sm border-amber-200 text-amber-700 hover:bg-amber-50 transition-colors"
-              >
+            {skills.map((skill, index) => <Badge key={index} variant="outline" className="px-4 py-2 text-sm border-amber-200 text-amber-700 hover:bg-amber-50 transition-colors">
                 {skill}
-              </Badge>
-            ))}
+              </Badge>)}
           </div>
         </div>
       </section>
@@ -358,8 +311,7 @@ const Index = () => {
             </p>
           </div>
           <div className="space-y-8">
-            {experience.map((job, index) => (
-              <Card key={index} className="p-8 bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
+            {experience.map((job, index) => <Card key={index} className="p-8 bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="grid md:grid-cols-4 gap-6 items-start">
                   <div className="md:col-span-1">
                     <Badge className="bg-amber-100 text-amber-800 mb-2">{job.period}</Badge>
@@ -371,8 +323,7 @@ const Index = () => {
                     <p className="text-gray-700 leading-relaxed">{job.description}</p>
                   </div>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -381,10 +332,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-amber-600 to-orange-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Let's Create Culinary Excellence Together</h2>
-          <p className="text-xl mb-12 opacity-90">
-            Ready to bring authentic Arabic flavors and innovative cuisine to your establishment? 
-            I'm available for executive chef positions, consulting, and menu development.
-          </p>
+          <p className="text-xl mb-12 opacity-90">Ready to bring authentic Arabic flavors and innovative cuisine to your establishment? I'm available for Head chef, executive chef positions, consulting, and menu development.</p>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center">
               <Mail className="w-8 h-8 mb-3" />
@@ -412,8 +360,6 @@ const Index = () => {
       <footer className="py-8 px-4 bg-gray-900 text-center text-gray-400">
         <p>&copy; 2024 Hasan Alkhoder - Professional Oriental Chef Portfolio. All rights reserved.</p>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
