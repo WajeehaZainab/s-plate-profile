@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -114,10 +113,14 @@ const Index = () => {
             <ChefHat className="w-20 h-20 mx-auto mb-6 text-amber-600" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 animate-slide-up">
-            Professional <span className="text-amber-600">Oriental</span> Chef
+            <span className="text-amber-600">HASAN</span> ALKHODER
           </h1>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-gray-800 animate-slide-up">
+            Professional <span className="text-amber-600">Oriental</span> Chef
+          </h2>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200">
-            Specializing in authentic Arabic and international cuisine with over 18 years of culinary excellence across the Middle East
+            An experienced and passionate chef with expertise in multiple restaurant and hotel settings, 
+            striving to serve the best possible food with innovative menu creation and exceptional leadership skills
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animation-delay-400">
             <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg">
@@ -137,16 +140,14 @@ const Index = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">About Me</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                With over 18 years of progressive culinary experience across prestigious hotels and restaurants 
-                throughout the Middle East, I have built my expertise from the ground up. Starting as a Commis 
-                in Syria and advancing to my current role as Oriental Chef at Address Creek Harbour Hotel in Dubai, 
-                my journey reflects dedication to mastering both traditional Arabic cuisine and international cooking.
+                I am an experienced and passionate cook with extensive experience in multiple restaurant and hotel settings, 
+                always striving to serve the best possible food. Recognized as a visionary chef with deep knowledge of food 
+                trends and the ability to think outside the box when it comes to menu creation.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                My expertise spans from Lebanese and Syrian specialties to comprehensive international cuisine. 
-                I believe in preserving authentic flavors while embracing modern presentation techniques, 
-                training teams to maintain the highest standards, and delivering consistent quality that honors 
-                culinary heritage and innovation.
+                My in-depth knowledge of flavor and food relationships results in mouth-watering dishes and attractive menus. 
+                As a passionate first-choice professional, I am adept at using excellent leadership skills and innovation 
+                to guide kitchen planning and operations, ensuring exceptional culinary experiences in every setting.
               </p>
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
@@ -381,19 +382,19 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Let's Create Culinary Excellence Together</h2>
           <p className="text-xl mb-12 opacity-90">
-            Ready to bring authentic Arabic flavors to your establishment? 
+            Ready to bring authentic Arabic flavors and innovative cuisine to your establishment? 
             I'm available for executive chef positions, consulting, and menu development.
           </p>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center">
               <Mail className="w-8 h-8 mb-3" />
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="opacity-90">chef@example.com</p>
+              <p className="opacity-90">hasankhuder67@gmail.com</p>
             </div>
             <div className="flex flex-col items-center">
               <Phone className="w-8 h-8 mb-3" />
               <h3 className="font-semibold mb-2">Phone</h3>
-              <p className="opacity-90">Available upon request</p>
+              <p className="opacity-90">0566284150</p>
             </div>
             <div className="flex flex-col items-center">
               <MapPin className="w-8 h-8 mb-3" />
@@ -409,7 +410,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="py-8 px-4 bg-gray-900 text-center text-gray-400">
-        <p>&copy; 2024 Professional Oriental Chef Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 Hasan Alkhoder - Professional Oriental Chef Portfolio. All rights reserved.</p>
       </footer>
     </div>
   );
