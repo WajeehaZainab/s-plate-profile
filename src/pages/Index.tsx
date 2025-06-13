@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -7,6 +6,27 @@ import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, Star, FileCheck, Gra
 import { Link } from 'react-router-dom';
 
 const Index = () => {
+  const cuisineTypes = [
+    {
+      name: "Arabic & Middle Eastern Cuisine",
+      description: "Authentic traditional dishes from Lebanon, Syria, and the wider Middle East, featuring fresh ingredients and time-honored recipes",
+      image: "/lovable-uploads/40e42800-b4b7-4a50-bc02-f90391992e2d.png",
+      link: "/gallery#arabic-cuisine"
+    },
+    {
+      name: "International Cuisine",
+      description: "Global flavors and contemporary cooking techniques, showcasing diverse culinary traditions from around the world",
+      image: "/lovable-uploads/bd6cfe34-c7c6-4f52-ad2a-eef64f409195.png",
+      link: "/gallery#international-cuisine"
+    },
+    {
+      name: "Appetizers & Desserts",
+      description: "Elegant starters and sophisticated desserts with artistic presentation and exceptional flavor profiles",
+      image: "/lovable-uploads/b9835320-12cd-4671-9427-af8c1abe007c.png",
+      link: "/gallery#appetizers-desserts"
+    }
+  ];
+
   const dishes = [{
     name: "Arabic Fattoush Salad",
     description: "Fresh mixed greens with pomegranate, avocado, and crispy bread, dressed with traditional sumac vinaigrette",
@@ -433,6 +453,37 @@ SIGNATURE SPECIALTIES
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Cuisine Specialties Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Culinary Specialties</h2>
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              Explore my diverse culinary expertise across different cuisine types. 
+              Click on any cuisine to view the full gallery of dishes.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {cuisineTypes.map((cuisine, index) => (
+              <Link key={index} to={cuisine.link}>
+                <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer h-full">
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img src={cuisine.image} alt={cuisine.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-amber-600 transition-colors">{cuisine.name}</h3>
+                    <p className="text-gray-700 leading-relaxed">{cuisine.description}</p>
+                    <div className="flex items-center mt-4">
+                      {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />)}
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

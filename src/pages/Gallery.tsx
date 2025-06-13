@@ -46,6 +46,21 @@ const Gallery = () => {
       name: "Arabic Hummus with Presentation",
       image: "/lovable-uploads/2abc89da-c397-49f2-99de-095dd59a737a.png",
       description: "Traditional hummus with artistic pistachio garnish and decorative bread crisp"
+    },
+    {
+      name: "Watermelon Feta Delight",
+      image: "/lovable-uploads/aaeec376-0b65-45f6-a795-d62f71966650.png",
+      description: "Fresh watermelon cubes with crumbled feta cheese, fresh mint, and pistachios for a refreshing Arabic-style appetizer"
+    },
+    {
+      name: "Creative Arabic Hummus Presentation",
+      image: "/lovable-uploads/6d7db0a5-13e0-4df3-879e-c29f1943f913.png",
+      description: "Traditional Arabic hummus served with fresh vegetable sticks and artistic presentation on decorative plate"
+    },
+    {
+      name: "Modern Arabic Hummus Duo",
+      image: "/lovable-uploads/44624705-285b-4c8e-bb9a-ed7c34836b14.png",
+      description: "Contemporary presentation of traditional and charcoal hummus with artistic garnishes and fresh vegetables"
     }
   ];
 
@@ -84,6 +99,21 @@ const Gallery = () => {
       name: "Premium Beef Tenderloin",
       image: "/lovable-uploads/26b5f89d-1f7e-49f0-920a-215e3ccf36d5.png",
       description: "Perfectly cooked beef tenderloin with grilled asparagus, cherry tomatoes, and rich reduction"
+    },
+    {
+      name: "Gourmet Vegetable Tart",
+      image: "/lovable-uploads/d6eee233-6a42-4366-b640-ce6c1dd08bb9.png",
+      description: "Elegant layered vegetable tart with asparagus, featuring modern presentation and rich flavors"
+    },
+    {
+      name: "Heritage Tomato Bruschetta",
+      image: "/lovable-uploads/58561774-5af3-455f-a3d3-ed68e9f7a946.png",
+      description: "Artisanal bruschetta topped with heritage tomatoes, fresh arugula, and aged cheese on crispy bread"
+    },
+    {
+      name: "Pesto Linguine",
+      image: "/lovable-uploads/bea813cc-ef54-4594-bb70-4de70f52a022.png",
+      description: "Fresh linguine pasta tossed in homemade basil pesto with parmesan cheese and fresh basil garnish"
     }
   ];
 
@@ -107,6 +137,26 @@ const Gallery = () => {
       name: "Modern Tasting Plate",
       image: "/lovable-uploads/f28d9cb3-1ea6-469e-818c-c800fab5758b.png",
       description: "Contemporary presentation featuring foie gras, grilled vegetables, and artistic sauce work"
+    },
+    {
+      name: "Gourmet Egg Canapés",
+      image: "/lovable-uploads/776ca7bd-d30a-4268-ac4b-2166f855639e.png",
+      description: "Elegant egg-based canapés with artistic presentation, perfect for sophisticated events and fine dining"
+    },
+    {
+      name: "Salmon Pancake Rolls",
+      image: "/lovable-uploads/e5706051-383c-4687-a279-397f5f139180.png",
+      description: "Delicate pancake rolls filled with smoked salmon, cream cheese, and caviar, beautifully presented on banana leaf"
+    },
+    {
+      name: "Modern Charcoal Dumplings",
+      image: "/lovable-uploads/d8278996-5919-4528-94dd-f8b24afe73e5.png",
+      description: "Innovative charcoal-colored dumplings with artistic presentation and contemporary garnishes"
+    },
+    {
+      name: "Gourmet Quinoa Salad",
+      image: "/lovable-uploads/fbac7631-37a6-4566-8944-b70781e61ccb.png",
+      description: "Modern quinoa salad with colorful vegetables, herbs, and artistic carrot garnish on slate presentation"
     }
   ];
 
@@ -118,8 +168,8 @@ const Gallery = () => {
     }
   ];
 
-  const renderDishSection = (title: string, dishes: any[], sectionColor: string) => (
-    <div className="mb-20">
+  const renderDishSection = (title: string, dishes: any[], sectionColor: string, sectionId: string) => (
+    <div id={sectionId} className="mb-20">
       <div className="text-center mb-12">
         <h2 className={`text-3xl font-bold mb-4 ${sectionColor}`}>{title}</h2>
         <div className={`w-24 h-1 ${sectionColor.replace('text-', 'bg-')} mx-auto rounded-full`}></div>
@@ -163,10 +213,10 @@ const Gallery = () => {
       {/* Gallery Sections */}
       <div className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          {renderDishSection("Arabic & Middle Eastern Cuisine", arabicDishes, "text-amber-600")}
-          {renderDishSection("International Cuisine", internationalDishes, "text-orange-600")}
-          {renderDishSection("Appetizers & Desserts", appetizersAndDesserts, "text-amber-700")}
-          {renderDishSection("Healthy & Modern Options", healthyOptions, "text-green-600")}
+          {renderDishSection("Arabic & Middle Eastern Cuisine", arabicDishes, "text-amber-600", "arabic-cuisine")}
+          {renderDishSection("International Cuisine", internationalDishes, "text-orange-600", "international-cuisine")}
+          {renderDishSection("Appetizers & Desserts", appetizersAndDesserts, "text-amber-700", "appetizers-desserts")}
+          {renderDishSection("Healthy & Modern Options", healthyOptions, "text-green-600", "healthy-options")}
         </div>
       </div>
     </div>
