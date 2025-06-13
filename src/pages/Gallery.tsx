@@ -26,6 +26,26 @@ const Gallery = () => {
       name: "Fresh Arabic Salad",
       image: "/lovable-uploads/313bc143-911e-4d53-91c2-f571d70abd98.png",
       description: "Vibrant Arabic salad with mixed greens, cherry tomatoes, and traditional crispy bread garnish"
+    },
+    {
+      name: "Lebanese Makloubeh",
+      image: "/lovable-uploads/85841eeb-60aa-466d-bf15-426b17ad6005.png",
+      description: "Traditional Lebanese spiced meat with almonds, served in fresh bread with aromatic herbs"
+    },
+    {
+      name: "Mezze Village Salad",
+      image: "/lovable-uploads/28a55d0a-a92a-4612-9b24-18af65e51d43.png",
+      description: "Fresh Mediterranean salad with tomatoes, cucumber, olives, and feta cheese with mint garnish"
+    },
+    {
+      name: "Traditional Labneh with Herbs",
+      image: "/lovable-uploads/e1cfbf25-617e-4002-9a5a-44818450a2b9.png",
+      description: "Creamy labneh topped with fresh herbs, olive oil, and toasted bread crumbs"
+    },
+    {
+      name: "Arabic Hummus with Presentation",
+      image: "/lovable-uploads/2abc89da-c397-49f2-99de-095dd59a737a.png",
+      description: "Traditional hummus with artistic pistachio garnish and decorative bread crisp"
     }
   ];
 
@@ -54,6 +74,16 @@ const Gallery = () => {
       name: "Seared Tuna with Vegetables",
       image: "/lovable-uploads/23086f64-247b-488c-be8e-3bec67636556.png",
       description: "Perfectly seared tuna with fresh vegetables and artistic plating"
+    },
+    {
+      name: "Watermelon Feta Salad",
+      image: "/lovable-uploads/3d9f3a49-7d28-4553-8b25-cfd122dd7d64.png",
+      description: "Fresh watermelon cubes with crumbled feta, mint, and microgreens for a refreshing modern appetizer"
+    },
+    {
+      name: "Premium Beef Tenderloin",
+      image: "/lovable-uploads/26b5f89d-1f7e-49f0-920a-215e3ccf36d5.png",
+      description: "Perfectly cooked beef tenderloin with grilled asparagus, cherry tomatoes, and rich reduction"
     }
   ];
 
@@ -67,6 +97,16 @@ const Gallery = () => {
       name: "Artistic Dessert Presentation",
       image: "/lovable-uploads/a514be23-29e2-4657-82b0-a2110a467a9c.png",
       description: "Elegant dessert with artistic plating, featuring delicate garnishes and creative presentation"
+    },
+    {
+      name: "Sophisticated Carpaccio",
+      image: "/lovable-uploads/2d67b5fc-ab78-4a46-a0ed-88afc25c3811.png",
+      description: "Thinly sliced premium carpaccio with fresh greens, edible flowers, and artisanal garnishes"
+    },
+    {
+      name: "Modern Tasting Plate",
+      image: "/lovable-uploads/f28d9cb3-1ea6-469e-818c-c800fab5758b.png",
+      description: "Contemporary presentation featuring foie gras, grilled vegetables, and artistic sauce work"
     }
   ];
 

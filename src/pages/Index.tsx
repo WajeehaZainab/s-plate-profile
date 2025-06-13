@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -19,7 +20,9 @@ const Index = () => {
     description: "Expertly prepared chicken breast stuffed with herbs and spices, served with roasted vegetables and signature sauce",
     image: "/lovable-uploads/bd6cfe34-c7c6-4f52-ad2a-eef64f409195.png"
   }];
+
   const skills = ["Arabic Cuisine", "International Cuisine", "Lebanese Cuisine", "Syrian Cuisine", "Menu Development", "Kitchen Management", "Staff Training", "Food Safety", "Buffet Operations", "Cold Kitchen", "Hot Kitchen", "Food Presentation", "Recipe Development", "Hygiene Standards", "Team Leadership"];
+  
   const experience = [{
     position: "Oriental Chef",
     restaurant: "Address Creek Harbour Hotel - Emaar",
@@ -83,84 +86,138 @@ const Index = () => {
   }];
 
   const handleDownloadCV = () => {
-    // Create a simple CV content
+    // Create a comprehensive PDF-style CV content
     const cvContent = `
-HASAN ALKHODER
-Professional Oriental Chef
+═══════════════════════════════════════════════════════════════════════════════
+                              HASAN ALKHODER
+                         Professional Oriental Chef
+═══════════════════════════════════════════════════════════════════════════════
 
-Contact Information:
-Email: hasankhuder67@gmail.com
-Phone: 0566284150
-Location: Dubai, UAE
+CONTACT INFORMATION
+═══════════════════════════════════════════════════════════════════════════════
+Email:     hasankhuder67@gmail.com
+Phone:     0566284150
+Location:  Dubai, UAE
 
-OBJECTIVE:
-An experienced and passionate cook with experience in multiple restaurant and hotels setting striving to serve the best possible food. Recognized as a visionary chef with knowledge of food trends and ability to think outside the box when it comes to menu creation, demonstrating an in-depth knowledge of flavor and food relationship resulting in mouth-watering dishes and attractive menus. A passionate first choice professional who is adept at using excellent leadership skills and innovation to guide kitchen planning and operations.
+PROFESSIONAL OBJECTIVE
+═══════════════════════════════════════════════════════════════════════════════
+An experienced and passionate cook with extensive experience in multiple restaurant 
+and hotel settings, striving to serve the best possible food. Recognized as a 
+visionary chef with knowledge of food trends and ability to think outside the box 
+when it comes to menu creation, demonstrating an in-depth knowledge of flavor and 
+food relationship resulting in mouth-watering dishes and attractive menus. 
 
-PROFESSIONAL EXPERIENCE:
+A passionate first choice professional who is adept at using excellent leadership 
+skills and innovation to guide kitchen planning and operations.
 
-Oriental Chef | Address Creek Harbour Hotel - Emaar | Dubai | June 2024 - Present
+PROFESSIONAL EXPERIENCE
+═══════════════════════════════════════════════════════════════════════════════
+
+ORIENTAL CHEF | Address Creek Harbour Hotel - Emaar | Dubai | June 2024 - Present
 • Managing 7 employees in Arabic kitchen and 3 employees breakfast team
-• Following up on cleanliness, setting shift schedules and distributing tasks in coordination with chef de cuisine
-• Responsible for kitchen and refrigerator management, production and expiration date monitoring
+• Following up on cleanliness, setting shift schedules and distributing tasks in 
+  coordination with chef de cuisine
+• Responsible for kitchen and refrigerator management, production and expiration 
+  date monitoring
 • Assisting chef de cuisine in developing menu for Alacarte and buffet operations
 
-Junior Sous Chef | Bab al Shams Hotel | Dubai | September 2022 - June 2024
+JUNIOR SOUS CHEF | Bab al Shams Hotel | Dubai | September 2022 - June 2024
 • Responsible for 5 employees in cold Arabic kitchen, training them on dish preparation
 • Following up on all recipes and presentation methods for Ala Cart and buffet
-• Enforcing strict health and hygiene standards and helping kitchen chefs to update the menu
+• Enforcing strict health and hygiene standards and helping kitchen chefs to update 
+  the menu
 
-Junior Sous Chef | Yasmine Palace Restaurant | Doha, Qatar | February 2021 - July 2022
-• Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders
-• Following up on cleanliness, hygiene, and everything related to flavors and dish decoration standards
+JUNIOR SOUS CHEF | Yasmine Palace Restaurant | Doha, Qatar | Feb 2021 - July 2022
+• Responsible for Arabic and international cooking, managing staff attendance, and 
+  coordinating orders
+• Following up on cleanliness, hygiene, and everything related to flavors and dish 
+  decoration standards
 
-Senior Chef de Partie | Sheraton Hotel | Doha, Qatar | March 2019 - December 2020
-• Working under supervision of head chef, organizing menus and supervising buffet operations
+SENIOR CHEF DE PARTIE | Sheraton Hotel | Doha, Qatar | March 2019 - December 2020
+• Working under supervision of head chef, organizing menus and supervising buffet 
+  operations
 • Organizing work schedules for employees and maintaining hygiene standards
 
-Chef de Partie | Le Royal Hotel | Beirut, Lebanon | February 2017 - February 2019
+CHEF DE PARTIE | Le Royal Hotel | Beirut, Lebanon | February 2017 - February 2019
 • Overseeing food preparation and ensuring high standards of quality and consistency
 • Working under pressure in Arabic and International cuisine
 
-Chef de Partie | Movenpick Hotel | Beirut, Lebanon | March 2014 - January 2017
+CHEF DE PARTIE | Movenpick Hotel | Beirut, Lebanon | March 2014 - January 2017
 • Worked in Arabic kitchen for one year and international hot kitchen for two years
 • Gaining comprehensive experience in both cuisines
 
-Demi Chef de Partie | Qube Restaurant | Beirut, Lebanon | April 2012 - 2014
+DEMI CHEF DE PARTIE | Qube Restaurant | Beirut, Lebanon | April 2012 - 2014
 • Worked in oriental kitchen as chef for daily dishes
 • Specializing in all kinds of Lebanese and Syrian cuisine
 
-Demi Chef de Partie | Intercontinental Group Hotel | Riyadh, Saudi Arabia | February 2010 - February 2012
+DEMI CHEF DE PARTIE | Intercontinental Group Hotel | Riyadh, Saudi Arabia 
+February 2010 - February 2012
 • Worked in Arabic cold kitchen for one year preparing Arabic and local food
 • International hot kitchen preparing sauces and main dishes for one year
 
-Commis 1 | Ramsis Hotel | Aleppo, Syria | May 2008 - January 2010
+COMMIS 1 | Ramsis Hotel | Aleppo, Syria | May 2008 - January 2010
 • Helper in Arabic and international cold kitchen
 • Gaining foundational experience in professional kitchen operations
 
-Commis 2 | Meridian Hotel | Aleppo, Syria | June 2006 - April 2008
+COMMIS 2 | Meridian Hotel | Aleppo, Syria | June 2006 - April 2008
 • Arabic hot kitchen operations, washing and sterilizing vegetables and fruits
 • Organizing refrigerator storage
 
-EDUCATION:
-Diploma in Tourism and Hospitality | Tourism and Hotels Institute | Aleppo, Syria | 2004 - 2006
+EDUCATION & QUALIFICATIONS
+═══════════════════════════════════════════════════════════════════════════════
+Diploma in Tourism and Hospitality
+Tourism and Hotels Institute, Aleppo, Syria | 2004 - 2006
 
-LANGUAGES:
+PROFESSIONAL CERTIFICATIONS
+═══════════════════════════════════════════════════════════════════════════════
+• Person-in-Charge Advanced | TSI Quality Services | Valid Until October 2029
+• Basic Food Safety | Emaar Hospitality | Completed June 27, 2024
+
+LANGUAGES
+═══════════════════════════════════════════════════════════════════════════════
 • Arabic (Native)
 • English (Professional)
 
-SKILLS:
-Arabic Cuisine, International Cuisine, Lebanese Cuisine, Syrian Cuisine, Menu Development, Kitchen Management, Staff Training, Food Safety, Buffet Operations, Cold Kitchen, Hot Kitchen, Food Presentation, Recipe Development, Hygiene Standards, Team Leadership
+CORE COMPETENCIES & SKILLS
+═══════════════════════════════════════════════════════════════════════════════
+Culinary Expertise:
+• Arabic Cuisine          • International Cuisine    • Lebanese Cuisine
+• Syrian Cuisine          • Menu Development         • Food Presentation
+• Recipe Development      • Cold Kitchen             • Hot Kitchen
+• Buffet Operations
 
-CERTIFICATIONS:
-• Person-in-Charge Advanced | TSI Quality Services | Valid Until October 2029
-• Basic Food Safety | Emaar Hospitality | Completed June 27, 2024
+Management & Leadership:
+• Kitchen Management      • Staff Training           • Team Leadership
+• Food Safety            • Hygiene Standards        • Production Planning
+
+ACHIEVEMENTS & HIGHLIGHTS
+═══════════════════════════════════════════════════════════════════════════════
+• 18+ Years of Professional Culinary Experience
+• Managed teams of up to 10 employees across multiple kitchen departments
+• Worked in 5 countries: UAE, Qatar, Lebanon, Saudi Arabia, and Syria
+• Specialized in both traditional Arabic cuisine and international dishes
+• Expertise in menu development for both Alacarte and buffet operations
+• Proven track record in maintaining highest standards of food safety and hygiene
+
+SIGNATURE SPECIALTIES
+═══════════════════════════════════════════════════════════════════════════════
+• Traditional Arabic Fattoush with modern presentation
+• Authentic Lebanese Fatteh with artisanal garnishes
+• Innovative stuffed chicken breast preparations
+• Contemporary Arabic mezze platters
+• Fusion Arabic-International cuisine
+
+═══════════════════════════════════════════════════════════════════════════════
+                    Available for Head Chef & Executive Chef Positions
+                              Culinary Consulting Available
+═══════════════════════════════════════════════════════════════════════════════
     `;
 
     const blob = new Blob([cvContent], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Hasan_Alkhoder_CV.txt';
+    link.download = 'Hasan_Alkhoder_Professional_CV.txt';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -269,7 +326,7 @@ CERTIFICATIONS:
             </div>
             <div className="relative">
               <div className="aspect-[4/5] bg-gradient-to-br from-amber-100 to-orange-200 rounded-2xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=750&fit=crop&crop=center" alt="Professional chef in the kitchen" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/b9252256-f48f-4d13-96cb-844d4ab25a3b.png" alt="Chef Hasan Alkhoder working in professional kitchen" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
