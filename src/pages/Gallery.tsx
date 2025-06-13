@@ -23,7 +23,7 @@ const Gallery = () => {
       description: "Authentic Arabic fatteh with crispy vermicelli, creamy yogurt sauce, and toasted pine nuts"
     },
     {
-      name: "Fresh Arabic Salad",
+      name: "Fattoush",
       image: "/lovable-uploads/313bc143-911e-4d53-91c2-f571d70abd98.png",
       description: "Vibrant Arabic salad with mixed greens, cherry tomatoes, and traditional crispy bread garnish"
     },
