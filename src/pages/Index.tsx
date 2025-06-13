@@ -193,7 +193,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <div className="aspect-[4/5] bg-gradient-to-br from-amber-100 to-orange-200 rounded-2xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=750&fit=crop&crop=center" alt="Professional chef in the kitchen" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/c936ec1f-bfc8-435d-bf33-edb8ff88db3a.png" alt="Chef Hasan Alkhoder working in professional kitchen" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -304,7 +304,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Signature Dishes Section */}
+      {/* Signature Cuisines Section */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
