@@ -61,6 +61,16 @@ const Gallery = () => {
       name: "Modern Arabic Hummus Duo",
       image: "/lovable-uploads/44624705-285b-4c8e-bb9a-ed7c34836b14.png",
       description: "Contemporary presentation of traditional and charcoal hummus with artistic garnishes and fresh vegetables"
+    },
+    {
+      name: "Fresh Watermelon & Cheese Cubes",
+      image: "/lovable-uploads/fa2d858f-6fb8-480c-80ff-a74d41cc0ae1.png",
+      description: "Traditional Middle Eastern refresher with fresh watermelon cubes topped with white cheese and fresh mint"
+    },
+    {
+      name: "Modern Arabic Hummus Presentation",
+      image: "/lovable-uploads/e88e3acb-75d8-4aea-a03f-a01f4e68ca73.png",
+      description: "Contemporary dual hummus presentation featuring traditional and charcoal varieties with fresh garnishes"
     }
   ];
 
@@ -114,6 +124,21 @@ const Gallery = () => {
       name: "Pesto Linguine",
       image: "/lovable-uploads/bea813cc-ef54-4594-bb70-4de70f52a022.png",
       description: "Fresh linguine pasta tossed in homemade basil pesto with parmesan cheese and fresh basil garnish"
+    },
+    {
+      name: "Elegant Layered Potato Dish",
+      image: "/lovable-uploads/2640e12f-0d6e-451a-b564-b4936432c225.png",
+      description: "Sophisticated layered potato gratin with asparagus spears and microgreens, finished with savory sauce"
+    },
+    {
+      name: "Contemporary Tomato Tart",
+      image: "/lovable-uploads/406dc03e-ea6f-4071-a9c0-8ae5849e8b48.png",
+      description: "Modern interpretation of classic tomato tart with colorful cherry tomatoes, arugula, and artisanal bread base"
+    },
+    {
+      name: "Fresh Pesto Spaghetti",
+      image: "/lovable-uploads/53a8ea26-b120-428b-bc20-f78d73f8b39f.png",
+      description: "Traditional spaghetti with fresh basil pesto, topped with grated parmesan and fresh basil leaves"
     }
   ];
 
@@ -157,6 +182,31 @@ const Gallery = () => {
       name: "Gourmet Quinoa Salad",
       image: "/lovable-uploads/fbac7631-37a6-4566-8944-b70781e61ccb.png",
       description: "Modern quinoa salad with colorful vegetables, herbs, and artistic carrot garnish on slate presentation"
+    },
+    {
+      name: "Gourmet Egg Rolls",
+      image: "/lovable-uploads/d48d3cad-9585-4454-95a8-72e8cd641d1d.png",
+      description: "Elegantly plated crispy egg rolls with artistic presentation and garnishes, served on individual spoons"
+    },
+    {
+      name: "Sophisticated Pancake Rolls",
+      image: "/lovable-uploads/b815a150-b48a-4642-8ff2-bb7fbf36664f.png",
+      description: "Delicate pancake rolls with smoked salmon, cream cheese, and caviar, beautifully arranged on banana leaf"
+    },
+    {
+      name: "Creative Green Hummus",
+      image: "/lovable-uploads/023eb149-c2c9-4206-a32f-4985a54227fe.png",
+      description: "Innovative green-colored hummus with pine nuts and fresh vegetable sticks, artistically presented"
+    },
+    {
+      name: "Artistic Charcoal Dumplings",
+      image: "/lovable-uploads/e9093a19-cb96-46b9-96c7-6587b9215d86.png",
+      description: "Stunning charcoal-colored dumplings with modern plating and artistic sauce presentation"
+    },
+    {
+      name: "Gourmet Couscous Cake",
+      image: "/lovable-uploads/14d38dcc-38a7-4196-808f-a4015cf6da2d.png",
+      description: "Modern couscous cake with colorful vegetables, herbs, and artistic carrot garnish on slate board"
     }
   ];
 
