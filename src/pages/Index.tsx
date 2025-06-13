@@ -82,89 +82,13 @@ const Index = () => {
     description: "Arabic hot kitchen operations, washing and sterilizing vegetables and fruits, and organizing refrigerator storage."
   }];
 
-  const handleDownloadCV = () => {
-    // Create a simple CV content
-    const cvContent = `
-HASAN ALKHODER
-Professional Oriental Chef
-
-Contact Information:
-Email: hasankhuder67@gmail.com
-Phone: 0566284150
-Location: Dubai, UAE
-
-OBJECTIVE:
-An experienced and passionate cook with experience in multiple restaurant and hotels setting striving to serve the best possible food. Recognized as a visionary chef with knowledge of food trends and ability to think outside the box when it comes to menu creation, demonstrating an in-depth knowledge of flavor and food relationship resulting in mouth-watering dishes and attractive menus. A passionate first choice professional who is adept at using excellent leadership skills and innovation to guide kitchen planning and operations.
-
-PROFESSIONAL EXPERIENCE:
-
-Oriental Chef | Address Creek Harbour Hotel - Emaar | Dubai | June 2024 - Present
-• Managing 7 employees in Arabic kitchen and 3 employees breakfast team
-• Following up on cleanliness, setting shift schedules and distributing tasks in coordination with chef de cuisine
-• Responsible for kitchen and refrigerator management, production and expiration date monitoring
-• Assisting chef de cuisine in developing menu for Alacarte and buffet operations
-
-Junior Sous Chef | Bab al Shams Hotel | Dubai | September 2022 - June 2024
-• Responsible for 5 employees in cold Arabic kitchen, training them on dish preparation
-• Following up on all recipes and presentation methods for Ala Cart and buffet
-• Enforcing strict health and hygiene standards and helping kitchen chefs to update the menu
-
-Junior Sous Chef | Yasmine Palace Restaurant | Doha, Qatar | February 2021 - July 2022
-• Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders
-• Following up on cleanliness, hygiene, and everything related to flavors and dish decoration standards
-
-Senior Chef de Partie | Sheraton Hotel | Doha, Qatar | March 2019 - December 2020
-• Working under supervision of head chef, organizing menus and supervising buffet operations
-• Organizing work schedules for employees and maintaining hygiene standards
-
-Chef de Partie | Le Royal Hotel | Beirut, Lebanon | February 2017 - February 2019
-• Overseeing food preparation and ensuring high standards of quality and consistency
-• Working under pressure in Arabic and International cuisine
-
-Chef de Partie | Movenpick Hotel | Beirut, Lebanon | March 2014 - January 2017
-• Worked in Arabic kitchen for one year and international hot kitchen for two years
-• Gaining comprehensive experience in both cuisines
-
-Demi Chef de Partie | Qube Restaurant | Beirut, Lebanon | April 2012 - 2014
-• Worked in oriental kitchen as chef for daily dishes
-• Specializing in all kinds of Lebanese and Syrian cuisine
-
-Demi Chef de Partie | Intercontinental Group Hotel | Riyadh, Saudi Arabia | February 2010 - February 2012
-• Worked in Arabic cold kitchen for one year preparing Arabic and local food
-• International hot kitchen preparing sauces and main dishes for one year
-
-Commis 1 | Ramsis Hotel | Aleppo, Syria | May 2008 - January 2010
-• Helper in Arabic and international cold kitchen
-• Gaining foundational experience in professional kitchen operations
-
-Commis 2 | Meridian Hotel | Aleppo, Syria | June 2006 - April 2008
-• Arabic hot kitchen operations, washing and sterilizing vegetables and fruits
-• Organizing refrigerator storage
-
-EDUCATION:
-Diploma in Tourism and Hospitality | Tourism and Hotels Institute | Aleppo, Syria | 2004 - 2006
-
-LANGUAGES:
-• Arabic (Native)
-• English (Professional)
-
-SKILLS:
-Arabic Cuisine, International Cuisine, Lebanese Cuisine, Syrian Cuisine, Menu Development, Kitchen Management, Staff Training, Food Safety, Buffet Operations, Cold Kitchen, Hot Kitchen, Food Presentation, Recipe Development, Hygiene Standards, Team Leadership
-
-CERTIFICATIONS:
-• Person-in-Charge Advanced | TSI Quality Services | Valid Until October 2029
-• Basic Food Safety | Emaar Hospitality | Completed June 27, 2024
-    `;
-
-    const blob = new Blob([cvContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
+    const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Hasan_Alkhoder_CV.txt';
+    link.href = '/Hasan_Alkhoder_CV.pdf'; // Path to your PDF in the public folder
+    link.download = 'Hasan_Alkhoder_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    URL.revokeObjectURL(url);
   };
 
   return <div className="min-h-screen bg-background">
