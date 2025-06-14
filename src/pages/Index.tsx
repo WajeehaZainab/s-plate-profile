@@ -22,10 +22,10 @@ const Index = () => {
       link: "/gallery#international-cuisine"
     },
     {
-      name: "Gourmet Appetizers & Desserts",
+      name: "Western Cuisine",
       description: "Sophisticated small plates and elegant desserts with artistic presentation and exceptional flavor profiles",
       image: "/lovable-uploads/2d67b5fc-ab78-4a46-a0ed-88afc25c3811.png",
-      link: "/gallery#appetizers-desserts"
+      link: "/gallery#western-cuisine"
     }
   ];
 

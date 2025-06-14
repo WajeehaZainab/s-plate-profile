@@ -71,6 +71,18 @@ const Gallery = () => {
     {
       name: "Arabic Mezze Spread",
       image: "/lovable-uploads/553d5e7b-14bc-422f-a234-15b74f91440a.png"
+    },
+    {
+      name: "Saffron Seafood Couscous",
+      image: "/lovable-uploads/7d31f8b5-c535-4009-b11e-fb91ba296bd9.png"
+    },
+    {
+      name: "Colorful Beetroot Salad",
+      image: "/lovable-uploads/5b0ad8b0-e2a5-427a-a377-b3d675133a3e.png"
+    },
+    {
+      name: "Orange Pistachio Muhallabia",
+      image: "/lovable-uploads/f0f72a09-d051-46b9-b6df-88594dcdc194.png"
     }
   ];
 
@@ -130,10 +142,18 @@ const Gallery = () => {
     {
       name: "Gourmet Club Sandwich",
       image: "/lovable-uploads/7e62d466-bdd0-4f30-b5b5-4e1353e51f28.png"
+    },
+    {
+      name: "Elegant Cauliflower Presentation",
+      image: "/lovable-uploads/5886fbb1-1d5b-4ef4-b610-0e91a44e13f6.png"
+    },
+    {
+      name: "Roasted Chicken with Vegetables",
+      image: "/lovable-uploads/46591b91-71db-45cd-947d-ea6d6eb822a5.png"
     }
   ];
 
-  const appetizersAndDesserts = [
+  const westernCuisine = [
     {
       name: "Mushroom Arancini",
       image: "/lovable-uploads/b9835320-12cd-4671-9427-af8c1abe007c.png"
@@ -169,13 +189,18 @@ const Gallery = () => {
     {
       name: "Smoked Salmon Cake",
       image: "/lovable-uploads/39d8cbbc-46b1-4ab5-acba-d1da55971d2e.png"
-    }
-  ];
-
-  const healthyOptions = [
+    },
     {
-      name: "Avocado Quinoa",
-      image: "/lovable-uploads/90e6f4a1-32c2-4aa6-a3e8-60ea56476762.png"
+      name: "Contemporary Plating",
+      image: "/lovable-uploads/e8abda14-6606-429c-9c65-1c0b951c835c.png"
+    },
+    {
+      name: "Herbed Pastry Rolls",
+      image: "/lovable-uploads/4c20a117-b4ec-4d40-b9f3-8b28eef04eda.png"
+    },
+    {
+      name: "Layered Phyllo Pastry",
+      image: "/lovable-uploads/bbbf6bc9-4929-4cff-8ddd-cf6cb771546b.png"
     }
   ];
 
@@ -225,8 +250,7 @@ const Gallery = () => {
         <div className="max-w-7xl mx-auto">
           {renderDishSection("Arabic & Middle Eastern Cuisine", arabicDishes, "text-amber-600", "arabic-cuisine")}
           {renderDishSection("International Cuisine", internationalDishes, "text-orange-600", "international-cuisine")}
-          {renderDishSection("Appetizers & Desserts", appetizersAndDesserts, "text-amber-700", "appetizers-desserts")}
-          {renderDishSection("Healthy & Modern Options", healthyOptions, "text-green-600", "healthy-options")}
+          {renderDishSection("Western Cuisine", westernCuisine, "text-amber-700", "western-cuisine")}
         </div>
       </div>
     </div>
