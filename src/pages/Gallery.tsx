@@ -29,12 +29,12 @@ const Gallery = () => {
       description: "Fresh mixed greens with pomegranate, avocado, and crispy bread, dressed with traditional sumac vinaigrette"
     },
     {
-      name: "Shish Barak with Vermeceli Rice",
+      name: "sample",
       image: "/lovable-uploads/5427e9d1-0f52-42f3-a48c-8c257c6942e2.png",
       description: "Authentic Arabic dish with toasted bread, chickpeas, and creamy tahini sauce, garnished with fresh herbs"
     },
     {
-      name: "Traditional Fatteh",
+      name: "Shish Barak with Vermeceli Rice",
       image: "/lovable-uploads/04e4e5a6-cfed-4c2a-8df6-b4bd2073492b.png",
       description: "Authentic Arabic fatteh with crispy vermicelli, creamy yogurt sauce, and toasted pine nuts"
     },
