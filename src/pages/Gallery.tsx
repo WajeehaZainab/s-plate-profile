@@ -29,7 +29,7 @@ const Gallery = () => {
       description: "Fresh mixed greens with pomegranate, avocado, and crispy bread, dressed with traditional sumac vinaigrette"
     },
     {
-      name: "Traditional Fatteh",
+      name: "Shish Barak with Vermeceli rice",
       image: "/lovable-uploads/5427e9d1-0f52-42f3-a48c-8c257c6942e2.png",
       description: "Authentic Arabic dish with toasted bread, chickpeas, and creamy tahini sauce, garnished with fresh herbs"
     },
@@ -44,37 +44,37 @@ const Gallery = () => {
       description: "Vibrant Arabic salad with mixed greens, cherry tomatoes, and traditional crispy bread garnish"
     },
     {
-      name: "Lebanese Makloubeh",
+      name: "Hummus with Sujok",
       image: "/lovable-uploads/85841eeb-60aa-466d-bf15-426b17ad6005.png",
       description: "Traditional Lebanese spiced meat with almonds, served in fresh bread with aromatic herbs"
     },
     {
-      name: "Mezze Village Salad",
+      name: "Greek Salad",
       image: "/lovable-uploads/28a55d0a-a92a-4612-9b24-18af65e51d43.png",
       description: "Fresh Mediterranean salad with tomatoes, cucumber, olives, and feta cheese with mint garnish"
     },
     {
-      name: "Traditional Labneh with Herbs",
+      name: "Lentil tabouleh with burrata cheese ",
       image: "/lovable-uploads/e1cfbf25-617e-4002-9a5a-44818450a2b9.png",
       description: "Creamy labneh topped with fresh herbs, olive oil, and toasted bread crumbs"
     },
     {
-      name: "Arabic Hummus with Presentation",
+      name: "Roast pepper hummus",
       image: "/lovable-uploads/2abc89da-c397-49f2-99de-095dd59a737a.png",
       description: "Traditional hummus with artistic pistachio garnish and decorative bread crisp"
     },
     {
-      name: "Watermelon Feta Delight",
+      name: "Watermelon with shanklish",
       image: "/lovable-uploads/aaeec376-0b65-45f6-a795-d62f71966650.png",
       description: "Fresh watermelon cubes with crumbled feta cheese, fresh mint, and pistachios for a refreshing Arabic-style appetizer"
     },
     {
-      name: "Creative Arabic Hummus Presentation",
+      name: "Basil Hummus",
       image: "/lovable-uploads/6d7db0a5-13e0-4df3-879e-c29f1943f913.png",
       description: "Traditional Arabic hummus served with fresh vegetable sticks and artistic presentation on decorative plate"
     },
     {
-      name: "Modern Arabic Hummus Duo",
+      name: "Charcoal Hummus",
       image: "/lovable-uploads/44624705-285b-4c8e-bb9a-ed7c34836b14.png",
       description: "Contemporary presentation of traditional and charcoal hummus with artistic garnishes and fresh vegetables"
     },
@@ -97,7 +97,7 @@ const Gallery = () => {
       description: "Perfectly grilled chicken breast with sautéed mushrooms and green beans, finished with fresh microgreens"
     },
     {
-      name: "Stuffed Chicken with Rice",
+      name: "Fish Sayadiah",
       image: "/lovable-uploads/a8adaf4f-45ba-48f6-9520-d44e3570001c.png",
       description: "Traditional stuffed chicken breast filled with seasoned rice and herbs, served with rich gravy"
     },
@@ -107,7 +107,7 @@ const Gallery = () => {
       description: "Expertly prepared chicken breast stuffed with herbs and spices, served with roasted vegetables and signature sauce"
     },
     {
-      name: "Herb-Crusted Lamb Rack",
+      name: "Herb-Crusted Lamb chop",
       image: "/lovable-uploads/122fbf6e-2000-48d8-a440-a72cd534b072.png",
       description: "Premium lamb rack with herb crust, served with seasonal vegetables and rich jus"
     },
@@ -127,12 +127,12 @@ const Gallery = () => {
       description: "Perfectly cooked beef tenderloin with grilled asparagus, cherry tomatoes, and rich reduction"
     },
     {
-      name: "Gourmet Vegetable Tart",
+      name: "Grilled Chicken with Potato Gratin",
       image: "/lovable-uploads/d6eee233-6a42-4366-b640-ce6c1dd08bb9.png",
       description: "Elegant layered vegetable tart with asparagus, featuring modern presentation and rich flavors"
     },
     {
-      name: "Heritage Tomato Bruschetta",
+      name: "Tomato Bruschetta",
       image: "/lovable-uploads/58561774-5af3-455f-a3d3-ed68e9f7a946.png",
       description: "Artisanal bruschetta topped with heritage tomatoes, fresh arugula, and aged cheese on crispy bread"
     },
@@ -160,7 +160,7 @@ const Gallery = () => {
 
   const appetizersAndDesserts = [
     {
-      name: "Gourmet Appetizer Platter",
+      name: "Mushroom Arancini",
       image: "/lovable-uploads/b9835320-12cd-4671-9427-af8c1abe007c.png",
       description: "Elegant appetizer selection with crispy elements and flavorful dipping sauce"
     },
@@ -170,17 +170,17 @@ const Gallery = () => {
       description: "Elegant dessert with artistic plating, featuring delicate garnishes and creative presentation"
     },
     {
-      name: "Sophisticated Carpaccio",
+      name: "Vitello Tonnato",
       image: "/lovable-uploads/2d67b5fc-ab78-4a46-a0ed-88afc25c3811.png",
       description: "Thinly sliced premium carpaccio with fresh greens, edible flowers, and artisanal garnishes"
     },
     {
-      name: "Modern Tasting Plate",
+      name: "Fuagra with Fig Pure ",
       image: "/lovable-uploads/f28d9cb3-1ea6-469e-818c-c800fab5758b.png",
       description: "Contemporary presentation featuring foie gras, grilled vegetables, and artistic sauce work"
     },
     {
-      name: "Gourmet Egg Canapés",
+      name: "Quail Egg Arancini",
       image: "/lovable-uploads/776ca7bd-d30a-4268-ac4b-2166f855639e.png",
       description: "Elegant egg-based canapés with artistic presentation, perfect for sophisticated events and fine dining"
     },
@@ -190,12 +190,12 @@ const Gallery = () => {
       description: "Delicate pancake rolls filled with smoked salmon, cream cheese, and caviar, beautifully presented on banana leaf"
     },
     {
-      name: "Modern Charcoal Dumplings",
+      name: "Charcoal Hummus",
       image: "/lovable-uploads/d8278996-5919-4528-94dd-f8b24afe73e5.png",
       description: "Innovative charcoal-colored dumplings with artistic presentation and contemporary garnishes"
     },
     {
-      name: "Gourmet Quinoa Salad",
+      name: "Eggplant Crab Cake",
       image: "/lovable-uploads/fbac7631-37a6-4566-8944-b70781e61ccb.png",
       description: "Modern quinoa salad with colorful vegetables, herbs, and artistic carrot garnish on slate presentation"
     },
@@ -228,7 +228,7 @@ const Gallery = () => {
 
   const healthyOptions = [
     {
-      name: "Avocado Quinoa Tower",
+      name: "Avocado Quinoa",
       image: "/lovable-uploads/90e6f4a1-32c2-4aa6-a3e8-60ea56476762.png",
       description: "Modern healthy dish featuring avocado and quinoa with artistic presentation"
     }
