@@ -29,7 +29,7 @@ const Gallery = () => {
       description: "Fresh mixed greens with pomegranate, avocado, and crispy bread, dressed with traditional sumac vinaigrette"
     },
     {
-      name: "Shish Barak with Vermeceli rice",
+      name: "Shish Barak with Vermeceli Rice",
       image: "/lovable-uploads/5427e9d1-0f52-42f3-a48c-8c257c6942e2.png",
       description: "Authentic Arabic dish with toasted bread, chickpeas, and creamy tahini sauce, garnished with fresh herbs"
     },
@@ -54,17 +54,17 @@ const Gallery = () => {
       description: "Fresh Mediterranean salad with tomatoes, cucumber, olives, and feta cheese with mint garnish"
     },
     {
-      name: "Lentil tabouleh with burrata cheese ",
+      name: "Lentil Tabouleh with Burrata Cheese ",
       image: "/lovable-uploads/e1cfbf25-617e-4002-9a5a-44818450a2b9.png",
       description: "Creamy labneh topped with fresh herbs, olive oil, and toasted bread crumbs"
     },
     {
-      name: "Roast pepper hummus",
+      name: "Roast pepper Hummus",
       image: "/lovable-uploads/2abc89da-c397-49f2-99de-095dd59a737a.png",
       description: "Traditional hummus with artistic pistachio garnish and decorative bread crisp"
     },
     {
-      name: "Watermelon with shanklish",
+      name: "Watermelon with Shanklish",
       image: "/lovable-uploads/aaeec376-0b65-45f6-a795-d62f71966650.png",
       description: "Fresh watermelon cubes with crumbled feta cheese, fresh mint, and pistachios for a refreshing Arabic-style appetizer"
     },
@@ -107,7 +107,7 @@ const Gallery = () => {
       description: "Expertly prepared chicken breast stuffed with herbs and spices, served with roasted vegetables and signature sauce"
     },
     {
-      name: "Herb-Crusted Lamb chop",
+      name: "Herb-Crusted Lamb Chop",
       image: "/lovable-uploads/122fbf6e-2000-48d8-a440-a72cd534b072.png",
       description: "Premium lamb rack with herb crust, served with seasonal vegetables and rich jus"
     },
