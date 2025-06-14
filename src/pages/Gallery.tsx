@@ -29,10 +29,6 @@ const Gallery = () => {
       image: "/lovable-uploads/04e4e5a6-cfed-4c2a-8df6-b4bd2073492b.png"
     },
     {
-      name: "Fattoush",
-      image: "/lovable-uploads/313bc143-911e-4d53-91c2-f571d70abd98.png"
-    },
-    {
       name: "Hummus with Sujok",
       image: "/lovable-uploads/85841eeb-60aa-466d-bf15-426b17ad6005.png"
     },
@@ -63,6 +59,18 @@ const Gallery = () => {
     {
       name: "Modern Arabic Hummus Presentation",
       image: "/lovable-uploads/e88e3acb-75d8-4aea-a03f-a01f4e68ca73.png"
+    },
+    {
+      name: "Traditional Muhalabia Dessert",
+      image: "/lovable-uploads/21e9ff92-0e92-4b87-9996-c303b612b7b2.png"
+    },
+    {
+      name: "Mezze Platter Selection",
+      image: "/lovable-uploads/874704c2-a4ae-4938-a9be-10edcb68800e.png"
+    },
+    {
+      name: "Arabic Mezze Spread",
+      image: "/lovable-uploads/553d5e7b-14bc-422f-a234-15b74f91440a.png"
     }
   ];
 
@@ -102,6 +110,26 @@ const Gallery = () => {
     {
       name: "Pesto Linguine",
       image: "/lovable-uploads/bea813cc-ef54-4594-bb70-4de70f52a022.png"
+    },
+    {
+      name: "Contemporary Potato Nest",
+      image: "/lovable-uploads/2d702060-b8b5-4aee-9d3c-e8619d76ea07.png"
+    },
+    {
+      name: "Pan-Seared Fish with Garnish",
+      image: "/lovable-uploads/3601ab6d-fa83-46b1-9701-8add846ce164.png"
+    },
+    {
+      name: "Grilled Fish with Saffron Sauce",
+      image: "/lovable-uploads/6ed43f96-5f14-4f62-96d9-1260afcea694.png"
+    },
+    {
+      name: "Grilled Halloumi Sandwich",
+      image: "/lovable-uploads/b555405d-1142-4b3e-99ea-04940d8373a8.png"
+    },
+    {
+      name: "Gourmet Club Sandwich",
+      image: "/lovable-uploads/7e62d466-bdd0-4f30-b5b5-4e1353e51f28.png"
     }
   ];
 
@@ -129,6 +157,18 @@ const Gallery = () => {
     {
       name: "Eggplant Crab Cake",
       image: "/lovable-uploads/fbac7631-37a6-4566-8944-b70781e61ccb.png"
+    },
+    {
+      name: "Coconut Rice Ball",
+      image: "/lovable-uploads/6ed43f96-5f14-4f62-96d9-1260afcea694.png"
+    },
+    {
+      name: "Golden Breaded Arancini",
+      image: "/lovable-uploads/5f71463c-a3ab-4680-b6ca-b8f03ed07575.png"
+    },
+    {
+      name: "Smoked Salmon Cake",
+      image: "/lovable-uploads/39d8cbbc-46b1-4ab5-acba-d1da55971d2e.png"
     }
   ];
 
