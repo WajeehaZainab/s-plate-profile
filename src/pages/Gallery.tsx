@@ -76,10 +76,7 @@ const Gallery = () => {
       name: "Beetroot Carpaccio",
       image: "/lovable-uploads/5b0ad8b0-e2a5-427a-a377-b3d675133a3e.png"
     },
-    {
-      name: "Orange Pistachio Muhallabia",
-      image: "/lovable-uploads/f0f72a09-d051-46b9-b6df-88594dcdc194.png"
-    }
+ 
   ];
 
   const internationalDishes = [
@@ -174,14 +171,7 @@ const Gallery = () => {
       name: "Eggplant Crab Cake",
       image: "/lovable-uploads/fbac7631-37a6-4566-8944-b70781e61ccb.png"
     },
-    {
-      name: "Coconut Rice Ball",
-      image: "/lovable-uploads/6ed43f96-5f14-4f62-96d9-1260afcea694.png"
-    },
-    {
-      name: "Golden Breaded Arancini",
-      image: "/lovable-uploads/5f71463c-a3ab-4680-b6ca-b8f03ed07575.png"
-    },
+    
     {
       name: "Smoked Salmon Cake",
       image: "/lovable-uploads/39d8cbbc-46b1-4ab5-acba-d1da55971d2e.png"
@@ -194,10 +184,7 @@ const Gallery = () => {
       name: "Beef Shawarma",
       image: "/lovable-uploads/4c20a117-b4ec-4d40-b9f3-8b28eef04eda.png"
     },
-    {
-      name: "Layered Phyllo Pastry",
-      image: "/lovable-uploads/bbbf6bc9-4929-4cff-8ddd-cf6cb771546b.png"
-    }
+  
   ];
 
   const renderDishSection = (title: string, dishes: any[], sectionColor: string, sectionId: string) => (
