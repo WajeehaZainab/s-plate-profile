@@ -1,12 +1,14 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, FileCheck, GraduationCap, Download, X } from 'lucide-react';
+import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, FileCheck, GraduationCap, FileText, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [selectedCertificate, setSelectedCertificate] = useState<string | null>(null);
+  const [showCV, setShowCV] = useState(false);
 
   const cuisines = [
     {
@@ -36,71 +38,61 @@ const Index = () => {
       position: "Oriental Chef",
       restaurant: "Address Creek Harbour Hotel - Emaar",
       location: "Dubai",
-      period: "June 2024 - Present",
-      description: "Managing 7 employees in Arabic kitchen and 3 employees breakfast team. Following up on cleanliness, setting shift schedules and distributing tasks in coordination with chef de cuisine. Responsible for kitchen and refrigerator management, production and expiration date monitoring. Assisting chef de cuisine in developing menu for Alacarte and buffet operations."
+      period: "June 2024 - Present"
     },
     {
       position: "Junior Sous Chef",
       restaurant: "Bab al Shams Hotel",
       location: "Dubai",
-      period: "September 2022 - June 2024",
-      description: "Responsible for 5 employees in cold Arabic kitchen, training them on dish preparation. Following up on all recipes and presentation methods for Ala Cart and buffet. Enforcing strict health and hygiene standards and helping kitchen chefs to update the menu."
+      period: "September 2022 - June 2024"
     },
     {
       position: "Junior Sous Chef",
       restaurant: "Yasmine Palace Restaurant",
       location: "Doha, Qatar",
-      period: "February 2021 - July 2022",
-      description: "Responsible for Arabic and international cooking, managing staff attendance, and coordinating orders. Following up on cleanliness, hygiene, and everything related to flavors and dish decoration standards."
+      period: "February 2021 - July 2022"
     },
     {
       position: "Senior Chef de Partie",
       restaurant: "Sheraton Hotel",
       location: "Doha, Qatar",
-      period: "March 2019 - December 2020",
-      description: "Working under supervision of head chef, organizing menus and supervising buffet operations. Organizing work schedules for employees and maintaining hygiene standards."
+      period: "March 2019 - December 2020"
     },
     {
       position: "Chef de Partie",
       restaurant: "Le Royal Hotel",
       location: "Beirut, Lebanon",
-      period: "February 2017 - February 2019",
-      description: "Overseeing food preparation and ensuring high standards of quality and consistency. Working under pressure in Arabic and International cuisine."
+      period: "February 2017 - February 2019"
     },
     {
       position: "Chef de Partie",
       restaurant: "Movenpick Hotel",
       location: "Beirut, Lebanon",
-      period: "March 2014 - January 2017",
-      description: "Worked in Arabic kitchen for one year and international hot kitchen for two years, gaining comprehensive experience in both cuisines."
+      period: "March 2014 - January 2017"
     },
     {
       position: "Demi Chef de Partie",
       restaurant: "Qube Restaurant",
       location: "Beirut, Lebanon",
-      period: "April 2012 - 2014",
-      description: "Worked in oriental kitchen as chef for daily dishes, specializing in all kinds of Lebanese and Syrian cuisine."
+      period: "April 2012 - 2014"
     },
     {
       position: "Demi Chef de Partie",
       restaurant: "Intercontinental Group Hotel, Riyadh Conference Palace",
       location: "Riyadh, Saudi Arabia",
-      period: "February 2010 - February 2012",
-      description: "Worked in Arabic cold kitchen for one year preparing Arabic and local food, then international hot kitchen preparing sauces and main dishes for one year."
+      period: "February 2010 - February 2012"
     },
     {
       position: "Commis 1",
       restaurant: "Ramsis Hotel",
       location: "Aleppo, Syria",
-      period: "May 2008 - January 2010",
-      description: "Helper in Arabic and international cold kitchen, gaining foundational experience in professional kitchen operations."
+      period: "May 2008 - January 2010"
     },
     {
       position: "Commis 2",
       restaurant: "Meridian Hotel",
       location: "Aleppo, Syria",
-      period: "June 2006 - April 2008",
-      description: "Arabic hot kitchen operations, washing and sterilizing vegetables and fruits, and organizing refrigerator storage."
+      period: "June 2006 - April 2008"
     }
   ];
 
@@ -123,6 +115,10 @@ const Index = () => {
     }
   ];
 
+  const handleViewCV = () => {
+    setShowCV(true);
+  };
+
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = '/Hasan_Alkhoder_CV.pdf';
@@ -139,6 +135,12 @@ const Index = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleGetInTouch = () => {
+    const subject = encodeURIComponent("Professional Inquiry - Chef Position");
+    const body = encodeURIComponent("Dear Hasan,\n\nI am interested in discussing potential culinary opportunities with you.\n\nBest regards,");
+    window.location.href = `mailto:hasankhuder67@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -158,17 +160,51 @@ const Index = () => {
                 </Button>
               </Link>
               <Button 
-                onClick={handleDownloadCV}
+                onClick={handleViewCV}
                 variant="outline"
                 className="border-amber-600 text-amber-600 hover:bg-amber-50 text-sm md:text-base px-3 md:px-4"
               >
-                <Download className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                Download CV
+                <FileText className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
+                View CV
               </Button>
             </div>
           </div>
         </div>
       </nav>
+
+      {/* CV Modal */}
+      {showCV && (
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto">
+            <div className="p-4 border-b flex justify-between items-center">
+              <h3 className="text-xl font-bold">Hasan Alkhoder - CV</h3>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setShowCV(false)}
+              >
+                <X className="w-4 h-4" />
+              </Button>
+            </div>
+            <div className="p-4">
+              <iframe
+                src="/Hasan_Alkhoder_CV.pdf"
+                className="w-full h-[70vh]"
+                title="Hasan Alkhoder CV"
+              />
+            </div>
+            <div className="p-4 border-t flex justify-center">
+              <Button
+                onClick={handleDownloadCV}
+                className="bg-amber-600 hover:bg-amber-700 text-white"
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                Download CV
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Certificate Modal */}
       {selectedCertificate && (
@@ -203,7 +239,7 @@ const Index = () => {
                 }}
                 className="bg-amber-600 hover:bg-amber-700 text-white"
               >
-                <Download className="w-4 h-4 mr-2" />
+                <FileText className="w-4 h-4 mr-2" />
                 Download Certificate
               </Button>
             </div>
@@ -238,10 +274,10 @@ const Index = () => {
               variant="outline"
               size="lg" 
               className="border-amber-600 text-amber-600 hover:bg-amber-50 px-6 md:px-8 py-3 text-base md:text-lg w-full sm:w-auto"
-              onClick={handleDownloadCV}
+              onClick={handleViewCV}
             >
-              <Download className="w-4 h-4 mr-2" />
-              Download CV
+              <FileText className="w-4 h-4 mr-2" />
+              View CV
             </Button>
           </div>
         </div>
@@ -320,7 +356,7 @@ const Index = () => {
       </section>
 
       {/* Certifications Section */}
-      <section className="py-12 md:py-20 px-4 bg-white">
+      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Professional Certifications</h2>
@@ -361,7 +397,7 @@ const Index = () => {
                       <p><span className="font-semibold">Issued By:</span> {certificate.issuedBy}</p>
                     )}
                   </div>
-                  <div className="mt-3 pt-3 border-t border-gray-100">
+                  <div className="mt-3 pt-3 border-t border-gray-100 text-center">
                     <p className="text-xs text-amber-600 font-medium">Click to view full size</p>
                   </div>
                 </CardContent>
@@ -463,8 +499,7 @@ const Index = () => {
                   </div>
                   <div className="md:col-span-3">
                     <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-1">{job.position}</h3>
-                    <h4 className="text-lg md:text-xl text-amber-600 font-semibold mb-2 md:mb-3">{job.restaurant}</h4>
-                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">{job.description}</p>
+                    <h4 className="text-lg md:text-xl text-amber-600 font-semibold">{job.restaurant}</h4>
                   </div>
                 </div>
               </Card>
@@ -495,7 +530,12 @@ const Index = () => {
               <p className="opacity-90 text-sm md:text-base">Dubai, UAE</p>
             </div>
           </div>
-          <Button size="lg" variant="outline" className="bg-white text-amber-600 hover:bg-gray-100 border-white px-6 md:px-8 py-3 text-base md:text-lg">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="bg-white text-amber-600 hover:bg-gray-100 border-white px-6 md:px-8 py-3 text-base md:text-lg"
+            onClick={handleGetInTouch}
+          >
             Get In Touch
           </Button>
         </div>
