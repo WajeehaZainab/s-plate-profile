@@ -12,7 +12,7 @@ const Index = () => {
   const cuisines = [
     {
       name: "Arabic & Middle Eastern",
-      image: "/lovable-uploads/40e42800-b4b7-4a50-bc02-f90391992e2d.png",
+      image: "/lovable-uploads/bea813cc-ef54-4594-bb70-4de70f52a022.png",
       link: "/gallery#arabic-cuisine"
     },
     {
@@ -475,7 +475,7 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="py-12 md:py-20 px-4 bg-amber-25">
+      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Professional Experience</h2>
