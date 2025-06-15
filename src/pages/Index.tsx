@@ -12,19 +12,16 @@ const Index = () => {
   const cuisines = [
     {
       name: "Arabic & Middle Eastern",
-      description: "Authentic traditional dishes with modern presentation, featuring mezze, hummus variations, and classic Arabic specialties",
       image: "/lovable-uploads/40e42800-b4b7-4a50-bc02-f90391992e2d.png",
       link: "/gallery#arabic-cuisine"
     },
     {
       name: "International Cuisine",
-      description: "Contemporary dishes from around the world, expertly prepared with premium ingredients and innovative techniques",
-      image: "/lovable-uploads/bd6cfe34-c7c6-4f52-ad2a-eef64f409195.png",
+      image: "/lovable-uploads/3601ab6d-fa83-46b1-9701-8add846ce164.png",
       link: "/gallery#international-cuisine"
     },
     {
       name: "Western Cuisine",
-      description: "Sophisticated small plates and elegant desserts with artistic presentation and exceptional flavor profiles",
       image: "/lovable-uploads/2d67b5fc-ab78-4a46-a0ed-88afc25c3811.png",
       link: "/gallery#western-cuisine"
     }
@@ -344,7 +341,6 @@ const Index = () => {
                   </div>
                   <CardContent className="p-4 md:p-6">
                     <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-gray-900">{cuisine.name}</h3>
-                    <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-3 md:mb-4">{cuisine.description}</p>
                     <span className="text-amber-600 font-semibold text-sm">View Gallery →</span>
                   </CardContent>
                 </Card>
@@ -382,7 +378,7 @@ const Index = () => {
                       <p className="text-amber-600 font-semibold text-sm md:text-base">{certificate.issuer}</p>
                     </div>
                   </div>
-                  <div className="text-sm text-gray-600 space-y-1">
+                  <div className="text-sm text-gray-600 space-y-1 text-center">
                     {certificate.validUntil && (
                       <p><span className="font-semibold">Valid Until:</span> {certificate.validUntil}</p>
                     )}
@@ -479,7 +475,7 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="py-12 md:py-20 px-4 bg-gray-50">
+      <section className="py-12 md:py-20 px-4 bg-amber-25">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Professional Experience</h2>
@@ -543,7 +539,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="py-6 md:py-8 px-4 bg-gray-900 text-center text-gray-400">
-        <p className="text-sm md:text-base">&copy; 2024 Hasan Alkhoder - Professional Oriental Chef Portfolio. All rights reserved.</p>
+        <p className="text-sm md:text-base">&copy; 2025 Hasan Alkhoder - Professional Oriental Chef Portfolio. All rights reserved.</p>
       </footer>
     </div>
   );

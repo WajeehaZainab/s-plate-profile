@@ -78,10 +78,6 @@ const Contact = () => {
                 </div>
               </div>
               <CardTitle className="text-2xl font-bold text-gray-900">Send me a message</CardTitle>
-              <p className="text-gray-600 mt-2">
-                I'd love to hear about your culinary projects and opportunities. 
-                Fill out the form below and I'll get back to you as soon as possible.
-              </p>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-2">
@@ -91,7 +87,6 @@ const Contact = () => {
                 <Input
                   id="subject"
                   type="text"
-                  placeholder="What would you like to discuss?"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                   className="text-base"
@@ -104,7 +99,6 @@ const Contact = () => {
                 </Label>
                 <Textarea
                   id="message"
-                  placeholder="Tell me about your project, requirements, or any questions you have..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   className="min-h-[150px] text-base resize-none"
