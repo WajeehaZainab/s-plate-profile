@@ -188,7 +188,7 @@ const Index = () => {
             </div>
             <div className="p-4">
               <iframe
-                src="/Hasan_Alkhoder_CV.pdf"
+                src="/Hasan_Alkhoder_CV.pdf#toolbar=1&navpanes=1&scrollbar=1"
                 className="w-full h-[70vh]"
                 title="Hasan Alkhoder CV"
               />
@@ -356,7 +356,7 @@ const Index = () => {
       </section>
 
       {/* Certifications Section */}
-      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-emerald-50 to-teal-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Professional Certifications</h2>
@@ -375,9 +375,9 @@ const Index = () => {
                     className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300" 
                   />
                 </div>
-                <CardContent className="p-4 md:p-6">
-                  <div className="flex items-start gap-3 mb-3">
-                    <FileCheck className="w-5 h-5 md:w-6 md:h-6 text-amber-600 mt-1 flex-shrink-0" />
+                <CardContent className="p-4 md:p-6 text-center">
+                  <div className="flex items-center justify-center gap-3 mb-3">
+                    <FileCheck className="w-5 h-5 md:w-6 md:h-6 text-amber-600 flex-shrink-0" />
                     <div>
                       <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1">{certificate.name}</h3>
                       <p className="text-amber-600 font-semibold text-sm md:text-base">{certificate.issuer}</p>
@@ -397,7 +397,7 @@ const Index = () => {
                       <p><span className="font-semibold">Issued By:</span> {certificate.issuedBy}</p>
                     )}
                   </div>
-                  <div className="mt-3 pt-3 border-t border-gray-100 text-center">
+                  <div className="mt-3 pt-3 border-t border-gray-100">
                     <p className="text-xs text-amber-600 font-medium">Click to view full size</p>
                   </div>
                 </CardContent>

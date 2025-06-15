@@ -53,10 +53,6 @@ const Gallery = () => {
       image: "/lovable-uploads/6d7db0a5-13e0-4df3-879e-c29f1943f913.png"
     },
     {
-      name: "Charcoal Hummus",
-      image: "/lovable-uploads/44624705-285b-4c8e-bb9a-ed7c34836b14.png"
-    },
-    {
       name: "Modern Arabic Hummus Presentation",
       image: "/lovable-uploads/e88e3acb-75d8-4aea-a03f-a01f4e68ca73.png"
     },
