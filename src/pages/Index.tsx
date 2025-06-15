@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -356,7 +355,7 @@ const Index = () => {
       </section>
 
       {/* Certifications Section */}
-      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-emerald-50 to-teal-100">
+      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-amber-50 to-orange-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Professional Certifications</h2>
@@ -530,14 +529,15 @@ const Index = () => {
               <p className="opacity-90 text-sm md:text-base">Dubai, UAE</p>
             </div>
           </div>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="bg-white text-amber-600 hover:bg-gray-100 border-white px-6 md:px-8 py-3 text-base md:text-lg"
-            onClick={handleGetInTouch}
-          >
-            Get In Touch
-          </Button>
+          <Link to="/contact">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-white text-amber-600 hover:bg-gray-100 border-white px-6 md:px-8 py-3 text-base md:text-lg"
+            >
+              Get In Touch
+            </Button>
+          </Link>
         </div>
       </section>
 
