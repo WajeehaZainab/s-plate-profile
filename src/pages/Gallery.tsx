@@ -61,23 +61,23 @@ const Gallery = () => {
       image: "/lovable-uploads/e88e3acb-75d8-4aea-a03f-a01f4e68ca73.png"
     },
     {
-      name: "Traditional Muhalabia Dessert",
+      name: "Muhammara",
       image: "/lovable-uploads/21e9ff92-0e92-4b87-9996-c303b612b7b2.png"
     },
     {
-      name: "Mezze Platter",
+      name: "Cold Mezza",
       image: "/lovable-uploads/874704c2-a4ae-4938-a9be-10edcb68800e.png"
     },
     {
-      name: "Arabic Mezze Spread",
+      name: "Beef Wellington",
       image: "/lovable-uploads/553d5e7b-14bc-422f-a234-15b74f91440a.png"
     },
     {
-      name: "Saffron Seafood Couscous",
+      name: "Salmon Cauliflower Couscous",
       image: "/lovable-uploads/7d31f8b5-c535-4009-b11e-fb91ba296bd9.png"
     },
     {
-      name: "Colorful Beetroot Salad",
+      name: "Beetroot Carpaccio",
       image: "/lovable-uploads/5b0ad8b0-e2a5-427a-a377-b3d675133a3e.png"
     },
     {
@@ -116,7 +116,7 @@ const Gallery = () => {
       image: "/lovable-uploads/d6eee233-6a42-4366-b640-ce6c1dd08bb9.png"
     },
     {
-      name: "Tomato Bruschetta",
+      name: "Tomato Fetta Tart",
       image: "/lovable-uploads/58561774-5af3-455f-a3d3-ed68e9f7a946.png"
     },
     {
@@ -124,38 +124,38 @@ const Gallery = () => {
       image: "/lovable-uploads/bea813cc-ef54-4594-bb70-4de70f52a022.png"
     },
     {
-      name: "Contemporary Potato Nest",
+      name: "Smoked Salmon with Tzatziki",
       image: "/lovable-uploads/2d702060-b8b5-4aee-9d3c-e8619d76ea07.png"
     },
     {
-      name: "Pan-Seared Fish with Garnish",
+      name: "Grilled Fish with Mango Sauce",
       image: "/lovable-uploads/3601ab6d-fa83-46b1-9701-8add846ce164.png"
     },
     {
-      name: "Grilled Fish with Saffron Sauce",
+      name: "Pasta Arancini",
       image: "/lovable-uploads/6ed43f96-5f14-4f62-96d9-1260afcea694.png"
     },
     {
-      name: "Grilled Halloumi Sandwich",
+      name: "Crab Sandwich",
       image: "/lovable-uploads/b555405d-1142-4b3e-99ea-04940d8373a8.png"
     },
     {
-      name: "Gourmet Club Sandwich",
+      name: "Club Sandwich",
       image: "/lovable-uploads/7e62d466-bdd0-4f30-b5b5-4e1353e51f28.png"
     },
     {
-      name: "Elegant Cauliflower Presentation",
+      name: "Grilled Halloumi with Roasted Pumpkin",
       image: "/lovable-uploads/5886fbb1-1d5b-4ef4-b610-0e91a44e13f6.png"
     },
     {
-      name: "Roasted Chicken with Vegetables",
+      name: "Stuffed Turkey",
       image: "/lovable-uploads/46591b91-71db-45cd-947d-ea6d6eb822a5.png"
     }
   ];
 
   const westernCuisine = [
     {
-      name: "Mushroom Arancini",
+      name: "Mozzarella Arancini",
       image: "/lovable-uploads/b9835320-12cd-4671-9427-af8c1abe007c.png"
     },
     {
@@ -191,11 +191,11 @@ const Gallery = () => {
       image: "/lovable-uploads/39d8cbbc-46b1-4ab5-acba-d1da55971d2e.png"
     },
     {
-      name: "Contemporary Plating",
+      name: "Burratini",
       image: "/lovable-uploads/e8abda14-6606-429c-9c65-1c0b951c835c.png"
     },
     {
-      name: "Herbed Pastry Rolls",
+      name: "Beef Shawarma",
       image: "/lovable-uploads/4c20a117-b4ec-4d40-b9f3-8b28eef04eda.png"
     },
     {
