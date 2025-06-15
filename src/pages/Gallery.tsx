@@ -65,7 +65,7 @@ const Gallery = () => {
       image: "/lovable-uploads/21e9ff92-0e92-4b87-9996-c303b612b7b2.png"
     },
     {
-      name: "Mezze Platter Selection",
+      name: "Mezze Platter",
       image: "/lovable-uploads/874704c2-a4ae-4938-a9be-10edcb68800e.png"
     },
     {
