@@ -12,18 +12,13 @@ const Index = () => {
   const cuisines = [
     {
       name: "Arabic & Middle Eastern",
-      image: "/lovable-uploads/bea813cc-ef54-4594-bb70-4de70f52a022.png",
+      image: "/lovable-uploads/2abc89da-c397-49f2-99de-095dd59a737a.png",
       link: "/gallery#arabic-cuisine"
     },
     {
       name: "International Cuisine",
-      image: "/lovable-uploads/3601ab6d-fa83-46b1-9701-8add846ce164.png",
+      image: "/lovable-uploads/23086f64-247b-488c-be8e-3bec67636556.png",
       link: "/gallery#international-cuisine"
-    },
-    {
-      name: "Western Cuisine",
-      image: "/lovable-uploads/2d67b5fc-ab78-4a46-a0ed-88afc25c3811.png",
-      link: "/gallery#western-cuisine"
     }
   ];
 
@@ -332,7 +327,7 @@ const Index = () => {
               and modern presentation techniques developed through years of professional experience.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             {cuisines.map((cuisine, index) => (
               <Link key={index} to={cuisine.link}>
                 <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-white overflow-hidden cursor-pointer h-full">
@@ -372,7 +367,6 @@ const Index = () => {
                 </div>
                 <CardContent className="p-4 md:p-6 text-center">
                   <div className="flex items-center justify-center gap-3 mb-3">
-                    <FileCheck className="w-5 h-5 md:w-6 md:h-6 text-amber-600 flex-shrink-0" />
                     <div>
                       <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1">{certificate.name}</h3>
                       <p className="text-amber-600 font-semibold text-sm md:text-base">{certificate.issuer}</p>
