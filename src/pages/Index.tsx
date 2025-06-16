@@ -54,7 +54,7 @@ const Index = () => {
   const cuisines = [
     {
       name: "Arabic & Middle Eastern",
-      image: "/lovable-uploads/e88e3acb-75d8-4aea-a03f-a01f4e68ca73.png",
+      image: "/lovable-uploads/8544cf3c-16f4-45f7-bb04-25c08fcf16ab.png",
       link: "/gallery#arabic-cuisine"
     },
     {
@@ -466,8 +466,7 @@ const Index = () => {
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Star Moments</h2>
             <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
-              Working alongside talented professionals who share the same passion for culinary excellence 
-              and continuous learning in the kitchen.
+              
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
