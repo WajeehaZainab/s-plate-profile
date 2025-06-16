@@ -63,18 +63,22 @@ const Gallery = () => {
     {
       name: "Beef Shawarma",
       image: "/lovable-uploads/4c20a117-b4ec-4d40-b9f3-8b28eef04eda.png"
-    }
-  ];
-
-  const internationalDishes = [
+    },
     {
-      name: "Arabic Style Spinach Salad",
-      image: "/lovable-uploads/6af819e9-2e53-4c7c-a0fb-157d99955364.png"
+      name: "Umm Ali",
+      image: "/lovable-uploads/8544cf3c-16f4-45f7-bb04-25c08fcf16ab.png"
     },
     {
       name: "Lamb Arayes",
       image: "/lovable-uploads/28a21c8e-a84a-4659-b502-97ac1661ef88.png"
     },
+    {
+      name: "Arabic Style Spinach Salad",
+      image: "/lovable-uploads/6af819e9-2e53-4c7c-a0fb-157d99955364.png"
+    }
+  ];
+
+  const internationalDishes = [
     {
       name: "Greek Salad",
       image: "/lovable-uploads/28a55d0a-a92a-4612-9b24-18af65e51d43.png"
@@ -198,10 +202,6 @@ const Gallery = () => {
     {
       name: "Caesar Salad",
       image: "/lovable-uploads/a42fc7b9-994f-45fd-af63-ab79e3cb15fd.png"
-    },
-    {
-      name: "Umm Ali",
-      image: "/lovable-uploads/8544f3c-16f4-45f7-bb04-25c08fcf16ab.png"
     },
     {
       name: "Crème Brûlée",

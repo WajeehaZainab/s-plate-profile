@@ -53,7 +53,7 @@ const Index = () => {
   const cuisines = [
     {
       name: "Arabic & Middle Eastern",
-      image: "/lovable-uploads/21e9ff92-0e92-4b87-9996-c303b612b7b2.png",
+      image: "/lovable-uploads/8544cf3c-16f4-45f7-bb04-25c08fcf16ab.png",
       link: "/gallery#arabic-cuisine"
     },
     {
@@ -73,6 +73,11 @@ const Index = () => {
       name: "Professional Collaboration",
       image: "/lovable-uploads/b72ce16a-673d-40f1-8987-60c75133172b.png",
       caption: "Chef CZN Burak"
+    },
+    {
+      name: "Chef Hasan with Grandmother",
+      image: "/lovable-uploads/7cefe822-3af7-40e3-90a9-9567e2a74fab.png",
+      caption: "Chef Hasan with Teta"
     }
   ];
 
@@ -427,7 +432,7 @@ const Index = () => {
                   <div className="flex items-center justify-center gap-3 mb-3">
                     <div>
                       <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1">{certificate.name}</h3>
-                      <p className="text-amber-600 font-semibold text-sm md:text-base">{certificate.issuer}</p>
+                      <p className="text-amber-600 text-sm md:text-base">{certificate.issuer}</p>
                     </div>
                   </div>
                   <div className="text-sm text-gray-600 space-y-1 text-center">
@@ -464,7 +469,7 @@ const Index = () => {
               and continuous learning in the kitchen.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {chefIcons.map((chef, index) => (
               <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 overflow-hidden">
                 <div className="aspect-[4/3] overflow-hidden">
@@ -565,7 +570,7 @@ const Index = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Professional Experience</h2>
