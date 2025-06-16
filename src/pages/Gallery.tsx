@@ -72,7 +72,7 @@ const Gallery = () => {
       image: "/lovable-uploads/6af819e9-2e53-4c7c-a0fb-157d99955364.png"
     },
     {
-      name: "Traditional Arabic Quesadilla",
+      name: "Lamb Arayes",
       image: "/lovable-uploads/28a21c8e-a84a-4659-b502-97ac1661ef88.png"
     },
     {
@@ -200,7 +200,7 @@ const Gallery = () => {
       image: "/lovable-uploads/a42fc7b9-994f-45fd-af63-ab79e3cb15fd.png"
     },
     {
-      name: "Chia Pudding Bowl",
+      name: "Umm Ali",
       image: "/lovable-uploads/8544cf3c-16f4-45f7-bb04-25c08fcf16ab.png"
     },
     {
