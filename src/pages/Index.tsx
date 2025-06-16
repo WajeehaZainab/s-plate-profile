@@ -67,17 +67,17 @@ const Index = () => {
     {
       name: "Chef Hasan with Colleague",
       image: "/lovable-uploads/1c6fac87-2b75-46db-9026-6b96be1c0f64.png",
-      caption: "Chef Hasan Alkhoder"
+      caption: "With Teta Latifa"
     },
     {
       name: "Professional Collaboration",
       image: "/lovable-uploads/b72ce16a-673d-40f1-8987-60c75133172b.png",
-      caption: "Chef CZN Burak"
+      caption: "With CZN Burak"
     },
     {
       name: "Chef Hasan with Grandmother",
       image: "/lovable-uploads/7cefe822-3af7-40e3-90a9-9567e2a74fab.png",
-      caption: "Chef Hasan with Teta"
+      caption: "With Teta Latifa"
     }
   ];
 
@@ -463,7 +463,7 @@ const Index = () => {
       <section className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Chef Icons Who Inspire Me</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Star Moments</h2>
             <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
               Working alongside talented professionals who share the same passion for culinary excellence 
               and continuous learning in the kitchen.
