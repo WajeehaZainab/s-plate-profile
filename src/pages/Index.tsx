@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -53,7 +54,7 @@ const Index = () => {
   const cuisines = [
     {
       name: "Arabic & Middle Eastern",
-      image: "/lovable-uploads/8544cf3c-16f4-45f7-bb04-25c08fcf16ab.png",
+      image: "/lovable-uploads/e88e3acb-75d8-4aea-a03f-a01f4e68ca73.png",
       link: "/gallery#arabic-cuisine"
     },
     {
@@ -472,7 +473,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {chefIcons.map((chef, index) => (
               <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 overflow-hidden">
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-[3/4] overflow-hidden">
                   <img 
                     src={chef.image} 
                     alt={chef.name} 
@@ -570,7 +571,7 @@ const Index = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Professional Experience</h2>
