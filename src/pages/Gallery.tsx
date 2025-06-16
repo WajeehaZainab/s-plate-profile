@@ -33,14 +33,6 @@ const Gallery = () => {
       image: "/lovable-uploads/85841eeb-60aa-466d-bf15-426b17ad6005.png"
     },
     {
-      name: "Greek Salad",
-      image: "/lovable-uploads/28a55d0a-a92a-4612-9b24-18af65e51d43.png"
-    },
-    {
-      name: "Lentil Tabouleh with Burrata Cheese",
-      image: "/lovable-uploads/e1cfbf25-617e-4002-9a5a-44818450a2b9.png"
-    },
-    {
       name: "Roast pepper Hummus",
       image: "/lovable-uploads/2abc89da-c397-49f2-99de-095dd59a737a.png"
     },
@@ -65,6 +57,29 @@ const Gallery = () => {
       image: "/lovable-uploads/874704c2-a4ae-4938-a9be-10edcb68800e.png"
     },
     {
+      name: "Fish Sayadiah",
+      image: "/lovable-uploads/a8adaf4f-45ba-48f6-9520-d44e3570001c.png"
+    },
+    {
+      name: "Arabic Style Spinach Salad",
+      image: "/lovable-uploads/6af819e9-2e53-4c7c-a0fb-157d99955364.png"
+    },
+    {
+      name: "Traditional Arabic Quesadilla",
+      image: "/lovable-uploads/28a21c8e-a84a-4659-b502-97ac1661ef88.png"
+    }
+  ];
+
+  const internationalDishes = [
+    {
+      name: "Greek Salad",
+      image: "/lovable-uploads/28a55d0a-a92a-4612-9b24-18af65e51d43.png"
+    },
+    {
+      name: "Lentil Tabouleh with Burrata Cheese",
+      image: "/lovable-uploads/e1cfbf25-617e-4002-9a5a-44818450a2b9.png"
+    },
+    {
       name: "Beef Wellington",
       image: "/lovable-uploads/553d5e7b-14bc-422f-a234-15b74f91440a.png"
     },
@@ -76,17 +91,9 @@ const Gallery = () => {
       name: "Beetroot Carpaccio",
       image: "/lovable-uploads/5b0ad8b0-e2a5-427a-a377-b3d675133a3e.png"
     },
- 
-  ];
-
-  const internationalDishes = [
     {
       name: "Grilled Chicken with Vegetables",
       image: "/lovable-uploads/3246030e-8c4b-429d-b5be-7648af76e938.png"
-    },
-    {
-      name: "Fish Sayadiah",
-      image: "/lovable-uploads/a8adaf4f-45ba-48f6-9520-d44e3570001c.png"
     },
     {
       name: "Stuffed Chicken Breast",
@@ -143,10 +150,7 @@ const Gallery = () => {
     {
       name: "Stuffed Turkey",
       image: "/lovable-uploads/46591b91-71db-45cd-947d-ea6d6eb822a5.png"
-    }
-  ];
-
-  const westernCuisine = [
+    },
     {
       name: "Mozzarella Arancini",
       image: "/lovable-uploads/b9835320-12cd-4671-9427-af8c1abe007c.png"
@@ -171,7 +175,6 @@ const Gallery = () => {
       name: "Eggplant Crab Cake",
       image: "/lovable-uploads/fbac7631-37a6-4566-8944-b70781e61ccb.png"
     },
-    
     {
       name: "Smoked Salmon Cake",
       image: "/lovable-uploads/39d8cbbc-46b1-4ab5-acba-d1da55971d2e.png"
@@ -184,7 +187,26 @@ const Gallery = () => {
       name: "Beef Shawarma",
       image: "/lovable-uploads/4c20a117-b4ec-4d40-b9f3-8b28eef04eda.png"
     },
-  
+    {
+      name: "Tuna Tartare Cones",
+      image: "/lovable-uploads/b6e390cf-39de-44cd-9026-4b2d75f05df5.png"
+    },
+    {
+      name: "Creamy Mushroom Risotto",
+      image: "/lovable-uploads/50a0c2f6-76a0-467c-abe3-1590c0f6b00b.png"
+    },
+    {
+      name: "Caesar Salad",
+      image: "/lovable-uploads/a42fc7b9-994f-45fd-af63-ab79e3cb15fd.png"
+    },
+    {
+      name: "Chia Pudding Bowl",
+      image: "/lovable-uploads/8544cf3c-16f4-45f7-bb04-25c08fcf16ab.png"
+    },
+    {
+      name: "Crème Brûlée",
+      image: "/lovable-uploads/2b51d5df-53f0-4f4b-be24-ee461bb53ee5.png"
+    }
   ];
 
   const renderDishSection = (title: string, dishes: any[], sectionColor: string, sectionId: string) => (
@@ -233,7 +255,6 @@ const Gallery = () => {
         <div className="max-w-7xl mx-auto">
           {renderDishSection("Arabic & Middle Eastern Cuisine", arabicDishes, "text-amber-600", "arabic-cuisine")}
           {renderDishSection("International Cuisine", internationalDishes, "text-orange-600", "international-cuisine")}
-          {renderDishSection("Western Cuisine", westernCuisine, "text-amber-700", "western-cuisine")}
         </div>
       </div>
     </div>

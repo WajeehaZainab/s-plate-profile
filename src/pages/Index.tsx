@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -9,6 +9,47 @@ const Index = () => {
   const [selectedCertificate, setSelectedCertificate] = useState<string | null>(null);
   const [showCV, setShowCV] = useState(false);
 
+  useEffect(() => {
+    // Update the page title and meta description
+    document.title = "Chef Hasan Portfolio";
+    
+    // Update or create meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.setAttribute('name', 'description');
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.setAttribute('content', 'Professional Oriental Chef Hasan Alkhoder - Expert in Arabic, Middle Eastern and International Cuisine');
+    
+    // Update or create Open Graph title
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Chef Hasan Portfolio');
+    
+    // Update or create Open Graph description
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.head.appendChild(ogDescription);
+    }
+    ogDescription.setAttribute('content', 'Professional Oriental Chef Hasan Alkhoder - Expert in Arabic, Middle Eastern and International Cuisine');
+    
+    // Update or create Open Graph image
+    let ogImage = document.querySelector('meta[property="og:image"]');
+    if (!ogImage) {
+      ogImage = document.createElement('meta');
+      ogImage.setAttribute('property', 'og:image');
+      document.head.appendChild(ogImage);
+    }
+    ogImage.setAttribute('content', '/lovable-uploads/c936ec1f-bfc8-435d-bf33-edb8ff88db3a.png');
+  }, []);
+
   const cuisines = [
     {
       name: "Arabic & Middle Eastern",
@@ -17,8 +58,21 @@ const Index = () => {
     },
     {
       name: "International Cuisine",
-      image: "/lovable-uploads/23086f64-247b-488c-be8e-3bec67636556.png",
+      image: "/lovable-uploads/3601ab6d-fa83-46b1-9701-8add846ce164.png",
       link: "/gallery#international-cuisine"
+    }
+  ];
+
+  const chefIcons = [
+    {
+      name: "Chef Hasan with Colleague",
+      image: "/lovable-uploads/1c6fac87-2b75-46db-9026-6b96be1c0f64.png",
+      caption: "Chef Hasan Alkhoder"
+    },
+    {
+      name: "Professional Collaboration",
+      image: "/lovable-uploads/b72ce16a-673d-40f1-8987-60c75133172b.png",
+      caption: "Chef Hasan with Fellow Chef"
     }
   ];
 
@@ -141,8 +195,12 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <ChefHat className="w-6 h-6 md:w-8 md:h-8 text-amber-600" />
-              <span className="text-lg md:text-xl font-bold text-gray-900">Hasan Alkhoder</span>
+              <img 
+                src="/lovable-uploads/c936ec1f-bfc8-435d-bf33-edb8ff88db3a.png" 
+                alt="Chef Hasan" 
+                className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover"
+              />
+              <span className="text-lg md:text-xl font-bold text-gray-900">Chef Hasan Portfolio</span>
             </div>
             <div className="flex gap-2 md:gap-3">
               <Link to="/gallery">
@@ -389,6 +447,35 @@ const Index = () => {
                   <div className="mt-3 pt-3 border-t border-gray-100">
                     <p className="text-xs text-amber-600 font-medium">Click to view full size</p>
                   </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Chef Icons Section */}
+      <section className="py-12 md:py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Chef Icons Who Inspire Me</h2>
+            <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
+              Working alongside talented professionals who share the same passion for culinary excellence 
+              and continuous learning in the kitchen.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+            {chefIcons.map((chef, index) => (
+              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={chef.image} 
+                    alt={chef.name} 
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
+                  />
+                </div>
+                <CardContent className="p-4 md:p-6 text-center">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900">{chef.caption}</h3>
                 </CardContent>
               </Card>
             ))}
