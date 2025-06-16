@@ -72,7 +72,7 @@ const Index = () => {
     {
       name: "Professional Collaboration",
       image: "/lovable-uploads/b72ce16a-673d-40f1-8987-60c75133172b.png",
-      caption: "Chef Hasan with Fellow Chef"
+      caption: "Chef CZN Burak"
     }
   ];
 
