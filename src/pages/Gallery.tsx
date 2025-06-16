@@ -61,16 +61,20 @@ const Gallery = () => {
       image: "/lovable-uploads/a8adaf4f-45ba-48f6-9520-d44e3570001c.png"
     },
     {
+      name: "Beef Shawarma",
+      image: "/lovable-uploads/4c20a117-b4ec-4d40-b9f3-8b28eef04eda.png"
+    }
+  ];
+
+  const internationalDishes = [
+    {
       name: "Arabic Style Spinach Salad",
       image: "/lovable-uploads/6af819e9-2e53-4c7c-a0fb-157d99955364.png"
     },
     {
       name: "Traditional Arabic Quesadilla",
       image: "/lovable-uploads/28a21c8e-a84a-4659-b502-97ac1661ef88.png"
-    }
-  ];
-
-  const internationalDishes = [
+    },
     {
       name: "Greek Salad",
       image: "/lovable-uploads/28a55d0a-a92a-4612-9b24-18af65e51d43.png"
@@ -182,10 +186,6 @@ const Gallery = () => {
     {
       name: "Burratini",
       image: "/lovable-uploads/e8abda14-6606-429c-9c65-1c0b951c835c.png"
-    },
-    {
-      name: "Beef Shawarma",
-      image: "/lovable-uploads/4c20a117-b4ec-4d40-b9f3-8b28eef04eda.png"
     },
     {
       name: "Tuna Tartare Cones",

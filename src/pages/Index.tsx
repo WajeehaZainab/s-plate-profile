@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, FileCheck, GraduationCap, FileText, X } from 'lucide-react';
+import { ChefHat, Award, Users, Clock, Mail, Phone, MapPin, FileCheck, GraduationCap, FileText, X, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -53,7 +53,7 @@ const Index = () => {
   const cuisines = [
     {
       name: "Arabic & Middle Eastern",
-      image: "/lovable-uploads/2abc89da-c397-49f2-99de-095dd59a737a.png",
+      image: "/lovable-uploads/21e9ff92-0e92-4b87-9996-c303b612b7b2.png",
       link: "/gallery#arabic-cuisine"
     },
     {
@@ -471,7 +471,7 @@ const Index = () => {
                   <img 
                     src={chef.image} 
                     alt={chef.name} 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300" 
                   />
                 </div>
                 <CardContent className="p-4 md:p-6 text-center">
@@ -555,9 +555,18 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
-        <div className="max-w-6xl mx-auto">
+      {/* Experience Section with Background Image */}
+      <section 
+        className="py-12 md:py-20 px-4 relative bg-gradient-to-br from-slate-50 to-blue-50"
+        style={{
+          backgroundImage: 'url(/lovable-uploads/52021c57-3d72-4542-9701-ba7759e828f3.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Professional Experience</h2>
             <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
@@ -567,7 +576,7 @@ const Index = () => {
           </div>
           <div className="space-y-6 md:space-y-8">
             {experience.map((job, index) => (
-              <Card key={index} className="p-4 md:p-8 bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <Card key={index} className="p-4 md:p-8 bg-white/90 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <div className="grid md:grid-cols-4 gap-4 md:gap-6 items-start">
                   <div className="md:col-span-1">
                     <Badge className="bg-amber-100 text-amber-800 mb-2 text-xs">{job.period}</Badge>
@@ -589,7 +598,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">Let's Create Culinary Excellence Together</h2>
           <p className="text-lg md:text-xl mb-8 md:mb-12 opacity-90">Ready to bring authentic Arabic flavors and innovative cuisine to your establishment? I'm available for Head chef, executive chef positions, consulting, and menu development.</p>
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
+          <div className="grid md:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12">
             <div className="flex flex-col items-center">
               <Mail className="w-6 h-6 md:w-8 md:h-8 mb-2 md:mb-3" />
               <h3 className="font-semibold mb-1 md:mb-2">Email</h3>
@@ -599,6 +608,18 @@ const Index = () => {
               <Phone className="w-6 h-6 md:w-8 md:h-8 mb-2 md:mb-3" />
               <h3 className="font-semibold mb-1 md:mb-2">Phone</h3>
               <p className="opacity-90 text-sm md:text-base">0566284150</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <Linkedin className="w-6 h-6 md:w-8 md:h-8 mb-2 md:mb-3" />
+              <h3 className="font-semibold mb-1 md:mb-2">LinkedIn</h3>
+              <a 
+                href="https://www.linkedin.com/in/hasan-khoder-575601265/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="opacity-90 text-sm md:text-base hover:underline"
+              >
+                View Profile
+              </a>
             </div>
             <div className="flex flex-col items-center">
               <MapPin className="w-6 h-6 md:w-8 md:h-8 mb-2 md:mb-3" />
