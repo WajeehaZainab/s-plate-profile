@@ -58,7 +58,7 @@ const Index = () => {
     },
     {
       name: "International Cuisine",
-      image: "/lovable-uploads/3601ab6d-fa83-46b1-9701-8add846ce164.png",
+      image: "/lovable-uploads/2b51d5df-53f0-4f4b-be24-ee461bb53ee5.png",
       link: "/gallery#international-cuisine"
     }
   ];
