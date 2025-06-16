@@ -201,7 +201,7 @@ const Gallery = () => {
     },
     {
       name: "Umm Ali",
-      image: "/lovable-uploads/8544cf3c-16f4-45f7-bb04-25c08fcf16ab.png"
+      image: "/lovable-uploads/8544f3c-16f4-45f7-bb04-25c08fcf16ab.png"
     },
     {
       name: "Crème Brûlée",
