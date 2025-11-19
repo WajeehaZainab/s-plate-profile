@@ -302,41 +302,57 @@ const Index = () => {
         </div>
       )}
 
-      {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 to-orange-100 overflow-hidden pt-16">
-        <div className="absolute inset-0 bg-black/10"></div>
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <div className="mb-6 md:mb-8 animate-fade-in">
-            <ChefHat className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 md:mb-6 text-amber-600" />
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 text-gray-900 animate-slide-up">
-            <span className="text-amber-600">HASAN</span> ALKHODER
-          </h1>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 md:mb-6 text-gray-800 animate-slide-up">
-            Professional <span className="text-amber-600">Oriental</span> Chef
-          </h2>
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-6 md:mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200">
-            An experienced and passionate cook with expertise in multiple restaurant and hotel settings, 
-            striving to serve the best possible food with innovative menu creation and exceptional leadership skills
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center animate-slide-up animation-delay-400">
-            <Link to="/gallery">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 text-base md:text-lg w-full sm:w-auto">
-                View My Work
-              </Button>
-            </Link>
-            <Button 
-              variant="outline"
-              size="lg" 
-              className="border-amber-600 text-amber-600 hover:bg-amber-50 px-6 md:px-8 py-3 text-base md:text-lg w-full sm:w-auto"
-              onClick={handleViewCV}
-            >
-              <FileText className="w-4 h-4 mr-2" />
-              View CV
-            </Button>
-          </div>
-        </div>
-      </section>
+  {/* Background Video */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+    style={{ zIndex: 0 }}
+  >
+    <source src="/hero-video.mp4" type="video/mp4" />
+    <source src="/hero-video.webm" type="video/webm" />
+    Your browser does not support the video tag.
+  </video>
+  
+  {/* Dark Overlay for better text readability */}
+  <div className="absolute inset-0 bg-black/50" style={{ zIndex: 1 }}></div>
+  
+  <div className="relative text-center px-4 max-w-4xl mx-auto" style={{ zIndex: 10 }}>
+    <div className="mb-6 md:mb-8 animate-fade-in">
+      <ChefHat className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 md:mb-6 text-amber-400 drop-shadow-lg" />
+    </div>
+    <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 text-white animate-slide-up drop-shadow-lg">
+      <span className="text-amber-400">HASAN</span> ALKHODER
+    </h1>
+    <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 md:mb-6 text-white animate-slide-up drop-shadow-lg">
+      Professional <span className="text-amber-400">Oriental</span> Chef
+    </h2>
+    <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-6 md:mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200 drop-shadow-md">
+      An experienced and passionate cook with expertise in multiple restaurant and hotel settings, 
+      striving to serve the best possible food with innovative menu creation and exceptional leadership skills
+    </p>
+    <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center animate-slide-up animation-delay-400">
+      <Link to="/gallery">
+        <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 text-base md:text-lg w-full sm:w-auto">
+          View My Work
+        </Button>
+      </Link>
+      <Button 
+  variant="outline"
+  size="lg" 
+  className="bg-black/60 border-white text-white hover:bg-amber-600/80 hover:text-white hover:border-amber-400 backdrop-blur-sm px-6 md:px-8 py-3 text-base md:text-lg w-full sm:w-auto transition-all duration-300"
+  onClick={handleViewCV}
+>
+  <FileText className="w-4 h-4 mr-2" />
+  View CV
+</Button>
+    </div>
+  </div>
+</section>
+
 
       {/* About Section */}
       <section className="py-12 md:py-20 px-4 bg-white">
@@ -380,7 +396,88 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {/* Awards & Recognition Section */}
+      <section className="py-12 md:py-20 px-4 bg-gray-50">
+  <div className="max-w-5xl mx-auto">
+    <div className="text-center mb-12 md:mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Awards & Recognition</h2>
+      <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
+        Honored to be recognized for culinary excellence and featured in prominent platforms
+      </p>
+    </div>
+    <div className="grid md:grid-cols-12 gap-6">
+      {/* Award Image - 55% */}
+      <div className="md:col-span-7">
+        <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-white p-0 h-[440px] md:h-[500px]">
+          <div className="relative w-full h-full overflow-hidden">
+            <img 
+              src="/Hasan Award.jpg" 
+              alt="Chef Hasan receiving culinary award" 
+              className="absolute inset-0 w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-10">
+              <Badge className="bg-amber-600 text-white mb-2 md:mb-3 text-sm md:text-base px-3 py-1.5">Award Winner</Badge>
+              <h3 className="text-xl md:text-2xl font-bold mb-2 text-white leading-tight">Culinary Excellence Award</h3>
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">Outstanding achievements in Oriental cuisine</p>
+            </div>
+          </div>
+        </Card>
+      </div>
 
+      {/* Instagram Post - 45% */}
+      <div className="md:col-span-5">
+        <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white h-[440px] md:h-[500px] flex flex-col">
+          <CardContent className="p-4 md:p-5 flex flex-col h-full">
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-tr from-purple-600 via-pink-600 to-orange-500 p-[2px] flex-shrink-0">
+                <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                  <svg className="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="url(#instagram-gradient)"/>
+                    <defs>
+                      <linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#FD5949"/>
+                        <stop offset="50%" stopColor="#D6249F"/>
+                        <stop offset="100%" stopColor="#285AEB"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div className="min-w-0">
+                <p className="font-semibold text-gray-900 text-sm md:text-base leading-tight">Featured Post</p>
+                <p className="text-xs md:text-sm text-gray-500 leading-tight">@hasanalkhoder</p>
+              </div>
+            </div>
+            
+            <div className="overflow-hidden rounded-lg mb-3 flex-grow min-h-0">
+              <img 
+                src="/Instagram-Post.jpg" 
+                alt="Instagram post preview" 
+                className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            
+            <p className="text-xs md:text-sm text-gray-700 mb-3 leading-relaxed">
+              Proud moment receiving culinary excellence recognition for outstanding achievements in Oriental cuisine.
+            </p>
+            
+            <a 
+              href="https://www.instagram.com/p/DO-RhRYDISG/?igsh=MTRrbndtem1haTFzNg%3D%3D" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="mt-auto flex-shrink-0"
+            >
+              <Button className="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 hover:opacity-90 text-white border-0 text-sm md:text-base py-2.5 h-auto font-semibold">
+                View on Instagram
+              </Button>
+            </a>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Signature Cuisines Section */}
       <section className="py-12 md:py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
