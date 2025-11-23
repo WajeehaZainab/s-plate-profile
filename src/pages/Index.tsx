@@ -303,57 +303,55 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16" style={{ backgroundColor: 'rgb(255, 219, 172)' }}>
-        {/* Background Video - Portrait in Center */}
-        <div className="absolute inset-0 flex items-center justify-center" style={{ zIndex: 0 }}>
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="h-full object-cover"
-            style={{ width: '40%', minWidth: '40%' }}
-          >
-            <source src="/hero-video.mp4" type="video/mp4" />
-            <source src="/hero-video.webm" type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        
-        {/* Dark Overlay for better text readability */}
-        
-        
-        <div className="relative text-center px-4 max-w-4xl mx-auto" style={{ zIndex: 10 }}>
-          <div className="mb-6 md:mb-8 animate-fade-in">
-            <ChefHat className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 md:mb-6 text-amber-400 drop-shadow-lg" />
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 text-white animate-slide-up drop-shadow-lg">
-            <span className="text-amber-400">HASAN</span> ALKHODER
-          </h1>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 md:mb-6 text-white animate-slide-up drop-shadow-lg">
-            Professional <span className="text-amber-400">Oriental</span> Chef
-          </h2>
-          <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-6 md:mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200 drop-shadow-md">
-            An experienced and passionate cook with expertise in multiple restaurant and hotel settings, 
-            striving to serve the best possible food with innovative menu creation and exceptional leadership skills
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center animate-slide-up animation-delay-400">
-            <Link to="/gallery">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 text-base md:text-lg w-full sm:w-auto shadow-lg">
-                View My Work
-              </Button>
-            </Link>
-            <Button 
-              variant="outline"
-              size="lg" 
-              className="bg-white/10 border-white text-white hover:bg-amber-600/80 hover:text-white hover:border-amber-400 backdrop-blur-sm px-6 md:px-8 py-3 text-base md:text-lg w-full sm:w-auto transition-all duration-300 shadow-lg"
-              onClick={handleViewCV}
-            >
-              <FileText className="w-4 h-4 mr-2" />
-              View CV
-            </Button>
-          </div>
-        </div>
-      </section>
+        {/* Background Video */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+    style={{ zIndex: 0 }}
+  >
+    <source src="/hero-video.mp4" type="video/mp4" />
+    <source src="/hero-video.webm" type="video/webm" />
+    Your browser does not support the video tag.
+  </video>
+  
+  {/* Dark Overlay for better text readability */}
+  <div className="absolute inset-0 bg-black/50" style={{ zIndex: 1 }}></div>
+  
+  <div className="relative text-center px-4 max-w-4xl mx-auto" style={{ zIndex: 10 }}>
+    <div className="mb-6 md:mb-8 animate-fade-in">
+      <ChefHat className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 md:mb-6 text-amber-400 drop-shadow-lg" />
+    </div>
+    <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 text-white animate-slide-up drop-shadow-lg">
+      <span className="text-amber-400">HASAN</span> ALKHODER
+    </h1>
+    <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 md:mb-6 text-white animate-slide-up drop-shadow-lg">
+      Professional <span className="text-amber-400">Oriental</span> Chef
+    </h2>
+    <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-6 md:mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200 drop-shadow-md">
+      An experienced and passionate cook with expertise in multiple restaurant and hotel settings, 
+      striving to serve the best possible food with innovative menu creation and exceptional leadership skills
+    </p>
+    <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center animate-slide-up animation-delay-400">
+      <Link to="/gallery">
+        <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 text-base md:text-lg w-full sm:w-auto">
+          View My Work
+        </Button>
+      </Link>
+      <Button 
+  variant="outline"
+  size="lg" 
+  className="bg-black/60 border-white text-white hover:bg-amber-600/80 hover:text-white hover:border-amber-400 backdrop-blur-sm px-6 md:px-8 py-3 text-base md:text-lg w-full sm:w-auto transition-all duration-300"
+  onClick={handleViewCV}
+>
+  <FileText className="w-4 h-4 mr-2" />
+  View CV
+</Button>
+    </div>
+  </div>
+</section>
 
       {/* About Section */}
       <section className="py-12 md:py-20 px-4 bg-white">
